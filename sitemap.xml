@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/404.html</loc>
+    
+    <lastmod>2017-07-11T02:35:27.208Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/google0737c02e83b7f612.html</loc>
     
     <lastmod>2017-07-09T12:28:50.219Z</lastmod>
@@ -23,14 +30,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/05/02/hello-dad/</loc>
-    
-    <lastmod>2017-07-08T21:21:39.321Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/05/02/hello-girl/</loc>
+    <loc>http://yoursite.com/2016/05/02/hello-month/</loc>
     
     <lastmod>2017-07-08T21:21:39.321Z</lastmod>
     
@@ -44,7 +44,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/05/02/hello-month/</loc>
+    <loc>http://yoursite.com/2016/05/02/hello-girl/</loc>
+    
+    <lastmod>2017-07-08T21:21:39.321Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/05/02/hello-dad/</loc>
     
     <lastmod>2017-07-08T21:21:39.321Z</lastmod>
     
