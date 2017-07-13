@@ -3,108 +3,28 @@
 
 
     
-    
-    
-    
   <url>
-    <loc>http://yoursite.com/2016/05/02/hello-month/</loc>
-    <lastmod>2017-07-08T21:21:39.321Z</lastmod>
+    <loc>http://yoursite.com/2017/07/13/first-blog/</loc>
+    <lastmod>2017-07-13T05:09:52.444Z</lastmod>
     <data>
         <display>
-        <title>Hello World</title>
-        <pubTime>2016-05-02T08:49:26.000Z</pubTime>
+        <title>first-blog</title>
+        <pubTime>2017-07-13T05:07:56.000Z</pubTime>
         
-        <tag>life</tag>
+        <tag>test</tag>
          
          
            
              
-              <breadCrumb title="测试" url="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
+              <breadCrumb title="Life" url="http://yoursite.com/categories/Life/"/>
           
         </display>
     </data>
     </url>
 
     
-  <url>
-    <loc>http://yoursite.com/2016/05/02/hello-world/</loc>
-    <lastmod>2017-07-08T21:21:39.321Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2016-05-02T08:49:26.000Z</pubTime>
-        
-        <tag>life</tag>
-         
-         
-           
-             
-              <breadCrumb title="测试" url="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
-  <url>
-    <loc>http://yoursite.com/2016/05/02/hello-girl/</loc>
-    <lastmod>2017-07-08T21:21:39.321Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2016-05-02T08:49:26.000Z</pubTime>
-        
-        <tag>life</tag>
-         
-         
-           
-             
-              <breadCrumb title="测试" url="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
-  <url>
-    <loc>http://yoursite.com/2016/05/02/hello-dad/</loc>
-    <lastmod>2017-07-08T21:21:39.321Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2016-05-02T08:49:26.000Z</pubTime>
-        
-        <tag>life</tag>
-         
-         
-           
-             
-              <breadCrumb title="测试" url="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/05/02/hello-boy/</loc>
-    <lastmod>2017-07-08T21:21:39.321Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2016-05-02T08:49:26.000Z</pubTime>
-        
-        <tag>life</tag>
-         
-         
-           
-             
-              <breadCrumb title="测试" url="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
     
     
