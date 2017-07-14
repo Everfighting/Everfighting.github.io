@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-13T05:09:52.444Z</updated>
+  <updated>2017-07-14T06:47:51.216Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,26 +16,27 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>first-blog</title>
+    <title>7、8月技术成长计划</title>
     <link href="http://yoursite.com/2017/07/13/first-blog/"/>
     <id>http://yoursite.com/2017/07/13/first-blog/</id>
     <published>2017-07-13T05:07:56.000Z</published>
-    <updated>2017-07-13T05:09:52.444Z</updated>
+    <updated>2017-07-14T06:47:51.216Z</updated>
     
-    <content type="html"><![CDATA[<p>This is my first-blog. I will write something to test it.</p>
+    <content type="html"><![CDATA[<p>这次博客找回的第一篇文档。<br><a id="more"></a><br>7、8月需研究主题：python基础语法、sql语法、git操作。<br>python基础语法：<br>书籍:《Python学习手册》、《基础教程》、《核心编程》<br>博客文章：《常见算法实现》、《1000行快速了解Python》<br>网络教程：廖雪峰 Python3教程<br>视频教程：慕课网配套廖雪峰教程</p>
+<p>git操作：<br>书籍:《Pro Git》、《Git权威指南》<br>网络教程：廖雪峰 Git教程<br>训练教程：实验楼《Git实战教程》</p>
+<p>SQL语法：<br>书籍：《SQL必知必会》、《SQL学习手册》<br>训练教程：SQLZOO训练题</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;This is my first-blog. I will write something to test it.&lt;/p&gt;
-
+      &lt;p&gt;这次博客找回的第一篇文档。&lt;br&gt;
     
     </summary>
     
-      <category term="Life" scheme="http://yoursite.com/categories/Life/"/>
+      <category term="IT" scheme="http://yoursite.com/categories/IT/"/>
     
     
-      <category term="test" scheme="http://yoursite.com/tags/test/"/>
+      <category term="plan" scheme="http://yoursite.com/tags/plan/"/>
     
   </entry>
   

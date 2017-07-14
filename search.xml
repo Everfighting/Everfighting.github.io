@@ -3,21 +3,23 @@
   
     
     <entry>
-      <title><![CDATA[first-blog]]></title>
+      <title><![CDATA[7、8月技术成长计划]]></title>
       <url>/2017/07/13/first-blog/</url>
-      <content type="html"><![CDATA[<p>This is my first-blog. I will write something to test it.</p>
+      <content type="html"><![CDATA[<p>这次博客找回的第一篇文档。<br><a id="more"></a><br>7、8月需研究主题：python基础语法、sql语法、git操作。<br>python基础语法：<br>书籍:《Python学习手册》、《基础教程》、《核心编程》<br>博客文章：《常见算法实现》、《1000行快速了解Python》<br>网络教程：廖雪峰 Python3教程<br>视频教程：慕课网配套廖雪峰教程</p>
+<p>git操作：<br>书籍:《Pro Git》、《Git权威指南》<br>网络教程：廖雪峰 Git教程<br>训练教程：实验楼《Git实战教程》</p>
+<p>SQL语法：<br>书籍：《SQL必知必会》、《SQL学习手册》<br>训练教程：SQLZOO训练题</p>
 ]]></content>
       
         <categories>
             
-            <category> Life </category>
+            <category> IT </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> test </tag>
+            <tag> plan </tag>
             
         </tags>
         
