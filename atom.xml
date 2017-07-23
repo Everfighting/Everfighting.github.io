@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-23T06:11:28.227Z</updated>
+  <updated>2017-07-23T15:37:12.230Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>beautiful_idiomatic_python</title>
+    <link href="http://yoursite.com/2017/07/23/beautiful_idiomatic_python/"/>
+    <id>http://yoursite.com/2017/07/23/beautiful_idiomatic_python/</id>
+    <published>2017-07-23T15:30:49.000Z</published>
+    <updated>2017-07-23T15:37:12.230Z</updated>
+    
+    <content type="html"><![CDATA[<script src="//gist.github.com/6213790.js"></script>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;//gist.github.com/6213790.js&quot;&gt;&lt;/script&gt;
+
+    
+    </summary>
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+      <category term="PyCon" scheme="http://yoursite.com/tags/PyCon/"/>
+    
+  </entry>
   
   <entry>
     <title>最美好关系大概就是彼此驯化了</title>
