@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-23T15:37:12.230Z</updated>
+  <updated>2017-07-23T15:43:38.711Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,14 +20,14 @@
     <link href="http://yoursite.com/2017/07/23/beautiful_idiomatic_python/"/>
     <id>http://yoursite.com/2017/07/23/beautiful_idiomatic_python/</id>
     <published>2017-07-23T15:30:49.000Z</published>
-    <updated>2017-07-23T15:37:12.230Z</updated>
+    <updated>2017-07-23T15:43:38.711Z</updated>
     
-    <content type="html"><![CDATA[<script src="//gist.github.com/6213790.js"></script>
+    <content type="html"><![CDATA[<p>Created by JeffPaine<br><script src="//gist.github.com/6213790.js"></script></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;script src=&quot;//gist.github.com/6213790.js&quot;&gt;&lt;/script&gt;
+      &lt;p&gt;Created by JeffPaine&lt;br&gt;&lt;script src=&quot;//gist.github.com/6213790.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 
     
     </summary>
