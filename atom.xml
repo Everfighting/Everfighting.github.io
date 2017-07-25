@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-23T15:43:38.711Z</updated>
+  <updated>2017-07-24T01:49:48.072Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>beautiful_idiomatic_python</title>
+    <title>beautiful idiomatic python</title>
     <link href="http://yoursite.com/2017/07/23/beautiful_idiomatic_python/"/>
     <id>http://yoursite.com/2017/07/23/beautiful_idiomatic_python/</id>
     <published>2017-07-23T15:30:49.000Z</published>
-    <updated>2017-07-23T15:43:38.711Z</updated>
+    <updated>2017-07-24T01:49:48.072Z</updated>
     
     <content type="html"><![CDATA[<p>Created by JeffPaine<br><script src="//gist.github.com/6213790.js"></script></p>
 ]]></content>
