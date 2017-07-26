@@ -84,7 +84,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="plan," />
+  <meta name="keywords" content="notes," />
 
 
 
@@ -102,17 +102,17 @@
 
 
 
-<meta name="description" content="这次博客找回的第一篇文档。">
-<meta name="keywords" content="plan">
+<meta name="description" content="该笔记整理自网易微专业《Python web开发》1.2、1.3、1.4节">
+<meta name="keywords" content="notes">
 <meta property="og:type" content="article">
-<meta property="og:title" content="7、8月技术成长计划">
-<meta property="og:url" content="http://yoursite.com/2017/07/13/first-blog/index.html">
+<meta property="og:title" content="python web开发笔记二：Semantic UI框架">
+<meta property="og:url" content="http://yoursite.com/2017/07/26/python-web-02/index.html">
 <meta property="og:site_name" content="thoughts of everfight">
-<meta property="og:description" content="这次博客找回的第一篇文档。">
-<meta property="og:updated_time" content="2017-07-14T06:47:51.216Z">
+<meta property="og:description" content="该笔记整理自网易微专业《Python web开发》1.2、1.3、1.4节">
+<meta property="og:updated_time" content="2017-07-26T13:33:04.712Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="7、8月技术成长计划">
-<meta name="twitter:description" content="这次博客找回的第一篇文档。">
+<meta name="twitter:title" content="python web开发笔记二：Semantic UI框架">
+<meta name="twitter:description" content="该笔记整理自网易微专业《Python web开发》1.2、1.3、1.4节">
 
 
 
@@ -140,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/07/13/first-blog/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/26/python-web-02/"/>
 
 
 
 
 
-  <title>7、8月技术成长计划 | thoughts of everfight</title>
+  <title>python web开发笔记二：Semantic UI框架 | thoughts of everfight</title>
   
 
 
@@ -341,7 +341,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/13/first-blog/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/26/python-web-02/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="everfight">
@@ -358,7 +358,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">7、8月技术成长计划</h2>
+          <h2 class="post-title" itemprop="name headline">python web开发笔记二：Semantic UI框架</h2>
         
 
         <div class="post-meta">
@@ -370,8 +370,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-13T13:07:56+08:00">
-                2017-07-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-26T21:23:21+08:00">
+                2017-07-26
               </time>
             
 
@@ -432,9 +432,91 @@
       
 
       
-        <p>这次博客找回的第一篇文档。<br><a id="more"></a><br>7、8月需研究主题：python基础语法、sql语法、git操作。<br>python基础语法：<br>书籍:《Python学习手册》、《基础教程》、《核心编程》<br>博客文章：《常见算法实现》、《1000行快速了解Python》<br>网络教程：廖雪峰 Python3教程<br>视频教程：慕课网配套廖雪峰教程</p>
-<p>git操作：<br>书籍:《Pro Git》、《Git权威指南》<br>网络教程：廖雪峰 Git教程<br>训练教程：实验楼《Git实战教程》</p>
-<p>SQL语法：<br>书籍：《SQL必知必会》、《SQL学习手册》<br>训练教程：SQLZOO训练题</p>
+        <p>该笔记整理自网易微专业《Python web开发》1.2、1.3、1.4节<br><a id="more"></a></p>
+<h1 id="CSS框架"><a href="#CSS框架" class="headerlink" title="CSS框架"></a>CSS框架</h1><ul>
+<li>What:<br>简单地说，就是一些事先写好的css集合，你只需要给你的html元素加上一些特定的类，就可以快速的得到一些想要的效果。</li>
+<li>Why:<br>简单、快速、方便、避免CSS中的各种坑。</li>
+<li>Which:<br>Semantic UI是一款语义化的前端开发框架，Semantic是围绕自然交流语言而架构的，这使得开发更加直观、易于理解。</li>
+</ul>
+<h1 id="Semantic-UI"><a href="#Semantic-UI" class="headerlink" title="Semantic UI"></a>Semantic UI</h1><h2 id="框架特色"><a href="#框架特色" class="headerlink" title="框架特色"></a>框架特色</h2><p>Semantic UI把词语和类看成一个个可以任意组合的概念，使用如：名词/修饰语，文字序列以及诸多的自然语法来定义类名。</p>
+<h2 id="常见用法"><a href="#常见用法" class="headerlink" title="常见用法"></a>常见用法</h2><pre><code>- 名词：具体的元素
+ui segment
+ui button
+ui image
+ui container
+ui divider
+ui header
+ui label
+
+- 形容词：
+very padded：文字的间距靠里
+vertical：去掉边框的圆角、阴影和缝隙
+inverted：颜色需要反选填充
+basic: 处理黑边问题
+fixed: 固定位置
+Mini Tiny Small Medium Large Big Huge Massive：大小
+circular：圆形
+
+- 图标名称：
+share icon
+wifi icon
+</code></pre><h2 id="两种引用方式"><a href="#两种引用方式" class="headerlink" title="两种引用方式"></a>两种引用方式</h2><ul>
+<li><p>本地引用</p>
+<blockquote>
+<p>1.把 Semantic CSS 的文件放到 CSS 文件夹中，记得themes中的fonts和images也要拷贝进来。<br>2.在 html文件的head部分的link中写上：href=”css/semantic.css”<br>如：<link rel="stylesheet" href="css/semantic.css" media="screen" title="no title" charset="utf-8"></p>
+</blockquote>
+</li>
+<li><p>在线引用</p>
+<blockquote>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.css">
+
+</blockquote>
+</li>
+</ul>
+<h2 id="案例分析"><a href="#案例分析" class="headerlink" title="案例分析"></a>案例分析</h2><ul>
+<li><p>Task1: 制作博客标签</p>
+<pre><code>ui red right ribbon label  # ui label标签样式 ribbon形状 right方向 
+ui inverted blue button # 蓝色边框的按钮
+ui inverted  vertical very padded  segment # vertical消除圆角、阴影、缝隙 very padded内容往中间聚拢
+ui fixed inverted menu # 固定在某个位置的菜单，具体菜单项用ui item表示
+</code></pre></li>
+<li><p>Task2: 绘制美国队长盾牌</p>
+</li>
+</ul>
+<div class="ui inverted red circular segment">    #大圆，内嵌红色<br>    <div class="ui circular segment">        #中圆，内嵌白色<br>        <div class="ui inverted red circular segment"> #小圆，内嵌红色<br>            <i class="circular inverted blue big star icon"></i> # 中心圆，圆中嵌有五角星，五角星与圆之间用蓝色填充，星内部白色填充<br>            </div><br>        </div><br>    </div><br>
+
+<h2 id="Semantic-UI网格系统"><a href="#Semantic-UI网格系统" class="headerlink" title="Semantic UI网格系统"></a>Semantic UI网格系统</h2><p>ui grid是Semantic框架中用来进行页面动态布局的工具。<br>主要用法分为两种：定宽网格和定栏网格</p>
+<ul>
+<li><p>定宽网格：页面一共16栏，明确知道每一块横跨宽度<br>  – ui grid </p>
+<pre><code>-- ten wide column
+-- six wide column
+</code></pre></li>
+<li><p>定栏网格：要分为几栏，一般为奇数，偶数可转化为定宽<br>  –ui three column grid</p>
+<pre><code>-- column
+-- column
+-- column
+</code></pre></li>
+<li><p>嵌套</p>
+<pre><code>-- ui three column grid container
+    -- column
+        -- ui two column grid
+        -- column
+        -- column
+    -- column
+    -- column
+</code></pre></li>
+</ul>
+<h1 id="其他补充"><a href="#其他补充" class="headerlink" title="其他补充"></a>其他补充</h1><h2 id="ATOM使用技巧"><a href="#ATOM使用技巧" class="headerlink" title="ATOM使用技巧"></a>ATOM使用技巧</h2><ul>
+<li>semantic.css打开的话就可以自动联想内部的组件。</li>
+<li>左上角蓝色点表示没有保存。</li>
+<li>安装browser-plus插件能够直接在编辑器里面看到显示效果，点击闪电标签实时同步修改的效果。</li>
+<li>输入lorem会自动生成被打乱顺序的拉丁字母用于填充。</li>
+<li>setting中修改show indent guide可以显示atom的对齐线。</li>
+</ul>
+<h2 id="拓展阅读"><a href="#拓展阅读" class="headerlink" title="拓展阅读"></a>拓展阅读</h2><ul>
+<li><a href="https://segmentfault.com/a/1190000000407283" target="_blank" rel="external">2014 年 15 款最棒的 HTML CSS 框架</a></li>
+</ul>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>该笔记源自网易微专业《Python web开发》1.2、1.3、1.4节</p>
 
       
     </div>
@@ -484,7 +566,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="http://yoursite.com/2017/07/13/first-blog/" title="7、8月技术成长计划">http://yoursite.com/2017/07/13/first-blog/</a>
+      <a href="http://yoursite.com/2017/07/26/python-web-02/" title="python web开发笔记二：Semantic UI框架">http://yoursite.com/2017/07/26/python-web-02/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -500,7 +582,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/plan/" rel="tag"><i class="fa fa-tag"></i> plan</a>
+            <a href="/tags/notes/" rel="tag"><i class="fa fa-tag"></i> notes</a>
           
         </div>
       
@@ -513,14 +595,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/07/26/python-web-03/" rel="next" title="python web开发笔记三：CSS基础">
+                <i class="fa fa-chevron-left"></i> python web开发笔记三：CSS基础
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/07/23/spoil/" rel="prev" title="最美好关系大概就是彼此驯化了">
-                最美好关系大概就是彼此驯化了 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/07/26/python-web-01/" rel="prev" title="python web开发笔记一：网页开发基础">
+                python web开发笔记一：网页开发基础 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -591,8 +677,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -762,6 +857,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS框架"><span class="nav-number">1.</span> <span class="nav-text">CSS框架</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Semantic-UI"><span class="nav-number">2.</span> <span class="nav-text">Semantic UI</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#框架特色"><span class="nav-number">2.1.</span> <span class="nav-text">框架特色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见用法"><span class="nav-number">2.2.</span> <span class="nav-text">常见用法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#两种引用方式"><span class="nav-number">2.3.</span> <span class="nav-text">两种引用方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#案例分析"><span class="nav-number">2.4.</span> <span class="nav-text">案例分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Semantic-UI网格系统"><span class="nav-number">2.5.</span> <span class="nav-text">Semantic UI网格系统</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他补充"><span class="nav-number">3.</span> <span class="nav-text">其他补充</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ATOM使用技巧"><span class="nav-number">3.1.</span> <span class="nav-text">ATOM使用技巧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拓展阅读"><span class="nav-number">3.2.</span> <span class="nav-text">拓展阅读</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#备注"><span class="nav-number">3.3.</span> <span class="nav-text">备注</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

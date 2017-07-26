@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/07/26/python-web-01/</loc>
+    
+    <lastmod>2017-07-26T13:36:04.144Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/07/26/python-web-02/</loc>
+    
+    <lastmod>2017-07-26T13:33:04.712Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/07/26/python-web-03/</loc>
+    
+    <lastmod>2017-07-26T13:32:57.639Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/07/26/python-web-04/</loc>
+    
+    <lastmod>2017-07-26T13:32:48.590Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/about/index.html</loc>
     
     <lastmod>2017-07-25T04:47:40.605Z</lastmod>

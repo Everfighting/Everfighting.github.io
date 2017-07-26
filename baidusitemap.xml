@@ -3,6 +3,86 @@
 
 
     
+  <url>
+    <loc>http://yoursite.com/2017/07/26/python-web-01/</loc>
+    <lastmod>2017-07-26T13:36:04.144Z</lastmod>
+    <data>
+        <display>
+        <title>python web开发笔记一：网页开发基础</title>
+        <pubTime>2017-07-26T13:23:21.000Z</pubTime>
+        
+        <tag>notes</tag>
+         
+         
+           
+             
+              <breadCrumb title="IT" url="http://yoursite.com/categories/IT/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/07/26/python-web-02/</loc>
+    <lastmod>2017-07-26T13:33:04.712Z</lastmod>
+    <data>
+        <display>
+        <title>python web开发笔记二：Semantic UI框架</title>
+        <pubTime>2017-07-26T13:23:21.000Z</pubTime>
+        
+        <tag>notes</tag>
+         
+         
+           
+             
+              <breadCrumb title="IT" url="http://yoursite.com/categories/IT/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/07/26/python-web-03/</loc>
+    <lastmod>2017-07-26T13:32:57.639Z</lastmod>
+    <data>
+        <display>
+        <title>python web开发笔记三：CSS基础</title>
+        <pubTime>2017-07-26T13:23:21.000Z</pubTime>
+        
+        <tag>notes</tag>
+         
+         
+           
+             
+              <breadCrumb title="IT" url="http://yoursite.com/categories/IT/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/07/26/python-web-04/</loc>
+    <lastmod>2017-07-26T13:32:48.590Z</lastmod>
+    <data>
+        <display>
+        <title>python web开发笔记四：Django开发基础</title>
+        <pubTime>2017-07-26T13:23:21.000Z</pubTime>
+        
+        <tag>notes</tag>
+         
+         
+           
+             
+              <breadCrumb title="IT" url="http://yoursite.com/categories/IT/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://yoursite.com/2017/07/23/beautiful_idiomatic_python/</loc>
