@@ -4,14 +4,14 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/07/26/python-web-05/</loc>
-    <lastmod>2017-07-26T14:09:22.181Z</lastmod>
+    <loc>http://yoursite.com/2017/07/26/http-notes/</loc>
+    <lastmod>2017-07-26T14:16:05.759Z</lastmod>
     <data>
         <display>
-        <title>python web开发笔记五：Django开发进阶</title>
-        <pubTime>2017-07-26T13:23:21.000Z</pubTime>
+        <title>笔记|《图解HTTP》</title>
+        <pubTime>2017-07-26T14:13:38.000Z</pubTime>
         
-        <tag>notes</tag>
+        <tag>notes,read</tag>
          
          
            
@@ -25,10 +25,50 @@
     
   <url>
     <loc>http://yoursite.com/2017/07/26/python-web-01/</loc>
-    <lastmod>2017-07-26T13:56:56.516Z</lastmod>
+    <lastmod>2017-07-26T14:10:41.725Z</lastmod>
     <data>
         <display>
         <title>python web开发笔记一：网页开发基础</title>
+        <pubTime>2017-07-26T13:23:21.000Z</pubTime>
+        
+        <tag>notes</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://yoursite.com/categories/HTML/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/07/26/python-web-04/</loc>
+    <lastmod>2017-07-26T14:10:32.816Z</lastmod>
+    <data>
+        <display>
+        <title>python web开发笔记四：Django开发基础</title>
+        <pubTime>2017-07-26T13:23:21.000Z</pubTime>
+        
+        <tag>notes</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="http://yoursite.com/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/07/26/python-web-05/</loc>
+    <lastmod>2017-07-26T14:09:22.181Z</lastmod>
+    <data>
+        <display>
+        <title>python web开发笔记五：Django开发进阶</title>
         <pubTime>2017-07-26T13:23:21.000Z</pubTime>
         
         <tag>notes</tag>
@@ -69,26 +109,6 @@
     <data>
         <display>
         <title>python web开发笔记三：CSS基础</title>
-        <pubTime>2017-07-26T13:23:21.000Z</pubTime>
-        
-        <tag>notes</tag>
-         
-         
-           
-             
-              <breadCrumb title="IT" url="http://yoursite.com/categories/IT/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/07/26/python-web-04/</loc>
-    <lastmod>2017-07-26T13:32:48.590Z</lastmod>
-    <data>
-        <display>
-        <title>python web开发笔记四：Django开发基础</title>
         <pubTime>2017-07-26T13:23:21.000Z</pubTime>
         
         <tag>notes</tag>
