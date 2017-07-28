@@ -2,23 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2017/07/26/http-notes/</loc>
+    <loc>http://yoursite.com/2017/07/26/filter-list-dict-set/</loc>
     
-    <lastmod>2017-07-26T14:16:05.759Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/07/26/python-web-01/</loc>
-    
-    <lastmod>2017-07-26T14:10:41.725Z</lastmod>
+    <lastmod>2017-07-28T15:30:10.363Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2017/07/26/python-web-04/</loc>
     
-    <lastmod>2017-07-26T14:10:32.816Z</lastmod>
+    <lastmod>2017-07-28T07:05:32.371Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/07/26/python-web-03/</loc>
+    
+    <lastmod>2017-07-28T07:05:29.561Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/07/26/python-web-01/</loc>
+    
+    <lastmod>2017-07-28T07:05:24.250Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/07/26/http-notes/</loc>
+    
+    <lastmod>2017-07-26T14:17:36.989Z</lastmod>
     
   </url>
   
@@ -33,13 +47,6 @@
     <loc>http://yoursite.com/2017/07/26/python-web-02/</loc>
     
     <lastmod>2017-07-26T13:33:04.712Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/07/26/python-web-03/</loc>
-    
-    <lastmod>2017-07-26T13:32:57.639Z</lastmod>
     
   </url>
   

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-26T14:16:05.759Z</updated>
+  <updated>2017-07-26T14:17:36.989Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>笔记|《图解HTTP》</title>
+    <title>笔记|图解HTTP</title>
     <link href="http://yoursite.com/2017/07/26/http-notes/"/>
     <id>http://yoursite.com/2017/07/26/http-notes/</id>
     <published>2017-07-26T14:13:38.000Z</published>
-    <updated>2017-07-26T14:16:05.759Z</updated>
+    <updated>2017-07-26T14:17:36.989Z</updated>
     
     <content type="html"><![CDATA[<p>以下是关于《图解HTTP》这本书的笔记。<br><a id="more"></a></p>
 <h1 id="第1章-了解Web及网络基础"><a href="#第1章-了解Web及网络基础" class="headerlink" title="第1章 了解Web及网络基础"></a>第1章 了解Web及网络基础</h1><h2 id="1-1-使用HTTP协议访问Web"><a href="#1-1-使用HTTP协议访问Web" class="headerlink" title="1.1 使用HTTP协议访问Web"></a>1.1 使用HTTP协议访问Web</h2><p>HTTP: HyperText Transfer Protocal,超文本传输协议／超文本转移协议。Web是建立在HTTP协议上通信的。</p>
@@ -255,11 +255,75 @@
   </entry>
   
   <entry>
+    <title>如何在列表、字典、集合中根据条件筛选数据</title>
+    <link href="http://yoursite.com/2017/07/26/filter-list-dict-set/"/>
+    <id>http://yoursite.com/2017/07/26/filter-list-dict-set/</id>
+    <published>2017-07-26T13:23:21.000Z</published>
+    <updated>2017-07-28T15:30:10.363Z</updated>
+    
+    <content type="html"><![CDATA[<p>此笔记整理自慕课网课程《Python进阶实战教程》:如何在列表、字典、集合中根据条件筛选数据<br><a id="more"></a></p>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> random <span class="keyword">import</span> randint</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">data = [randint(<span class="number">-10</span>,<span class="number">10</span>) <span class="keyword">for</span> _ <span class="keyword">in</span>  range(<span class="number">10</span>)]</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">data</div></pre></td></tr></table></figure>
+<pre><code>[3, 0, 1, 9, -4, -4, -3, 1, -7, 0]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[i <span class="keyword">for</span> i <span class="keyword">in</span>  filter(<span class="keyword">lambda</span> x:x&gt;=<span class="number">0</span>,data)]</div></pre></td></tr></table></figure>
+<pre><code>[3, 0, 1, 9, 1, 0]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[x <span class="keyword">for</span> x <span class="keyword">in</span> data <span class="keyword">if</span> x&gt;= <span class="number">0</span>]</div></pre></td></tr></table></figure>
+<pre><code>[3, 0, 1, 9, 1, 0]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">timeit [i <span class="keyword">for</span> i <span class="keyword">in</span>  filter(<span class="keyword">lambda</span> x:x&gt;=<span class="number">0</span>,data)]</div></pre></td></tr></table></figure>
+<pre><code>100000 loops, best of 3: 2.42 µs per loop
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">timeit [x <span class="keyword">for</span> x <span class="keyword">in</span> data <span class="keyword">if</span> x&gt;= <span class="number">0</span>]</div></pre></td></tr></table></figure>
+<pre><code>1000000 loops, best of 3: 950 ns per loop
+</code></pre><h1 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">d = &#123;x:randint(<span class="number">60</span>,<span class="number">100</span>) <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">20</span>)&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">d</div></pre></td></tr></table></figure>
+<pre><code>{1: 98,
+ 2: 77,
+ 3: 76,
+ 4: 94,
+ 5: 94,
+ 6: 86,
+ 7: 61,
+ 8: 72,
+ 9: 96,
+ 10: 64,
+ 11: 60,
+ 12: 76,
+ 13: 69,
+ 14: 81,
+ 15: 66,
+ 16: 70,
+ 17: 78,
+ 18: 80,
+ 19: 75}
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;k:v <span class="keyword">for</span> k,v <span class="keyword">in</span> d.items() <span class="keyword">if</span> v &gt;<span class="number">90</span> &#125;</div></pre></td></tr></table></figure>
+<pre><code>{1: 98, 4: 94, 5: 94, 9: 96}
+</code></pre><h1 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s = set(data)</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s</div></pre></td></tr></table></figure>
+<pre><code>{-7, -4, -3, 0, 1, 3, 9}
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;x <span class="keyword">for</span> x <span class="keyword">in</span> s <span class="keyword">if</span> x % <span class="number">3</span> == <span class="number">0</span>&#125;</div></pre></td></tr></table></figure>
+<pre><code>{-3, 0, 3, 9}
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;此笔记整理自慕课网课程《Python进阶实战教程》:如何在列表、字典、集合中根据条件筛选数据&lt;br&gt;
+    
+    </summary>
+    
+      <category term="IT" scheme="http://yoursite.com/categories/IT/"/>
+    
+    
+      <category term="notes" scheme="http://yoursite.com/tags/notes/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python web开发笔记一：网页开发基础</title>
     <link href="http://yoursite.com/2017/07/26/python-web-01/"/>
     <id>http://yoursite.com/2017/07/26/python-web-01/</id>
     <published>2017-07-26T13:23:21.000Z</published>
-    <updated>2017-07-26T14:10:41.725Z</updated>
+    <updated>2017-07-28T07:05:24.250Z</updated>
     
     <content type="html"><![CDATA[<p>该笔记整理自网易微专业《Python web开发》1.1节 网页开发基础。<br><a id="more"></a></p>
 <h1 id="网页基础知识"><a href="#网页基础知识" class="headerlink" title="网页基础知识"></a>网页基础知识</h1><h2 id="网页的构成"><a href="#网页的构成" class="headerlink" title="网页的构成"></a>网页的构成</h2><p>网页由html、css和Javascript构成，html是框架，CSS是样式和装饰，JS则是各项功能实现。我们把网页的组成类比成一栋房子，Html相当于房子的结构，CSS相当于房子的装修装饰，JavaScript相当于房子的水电通信等使用功能。</p>
@@ -301,7 +365,7 @@ _top ：在浏览器的整个窗口中打开，忽略任何框架。
     
     </summary>
     
-      <category term="HTML" scheme="http://yoursite.com/categories/HTML/"/>
+      <category term="IT" scheme="http://yoursite.com/categories/IT/"/>
     
     
       <category term="notes" scheme="http://yoursite.com/tags/notes/"/>
@@ -313,7 +377,7 @@ _top ：在浏览器的整个窗口中打开，忽略任何框架。
     <link href="http://yoursite.com/2017/07/26/python-web-03/"/>
     <id>http://yoursite.com/2017/07/26/python-web-03/</id>
     <published>2017-07-26T13:23:21.000Z</published>
-    <updated>2017-07-26T13:32:57.639Z</updated>
+    <updated>2017-07-28T07:05:29.561Z</updated>
     
     <content type="html"><![CDATA[<p>该笔记源自网易微专业《Python web开发》1.4、1.5、1.6、1.7节<br><a id="more"></a></p>
 <h1 id="CSS常用选择器"><a href="#CSS常用选择器" class="headerlink" title="CSS常用选择器"></a>CSS常用选择器</h1><pre><code> - 通配符选择器 *
@@ -488,7 +552,7 @@ ui fixed inverted menu # 固定在某个位置的菜单，具体菜单项用ui i
     <link href="http://yoursite.com/2017/07/26/python-web-04/"/>
     <id>http://yoursite.com/2017/07/26/python-web-04/</id>
     <published>2017-07-26T13:23:21.000Z</published>
-    <updated>2017-07-26T14:10:32.816Z</updated>
+    <updated>2017-07-28T07:05:32.371Z</updated>
     
     <content type="html"><![CDATA[<p>该笔记整理自网易微专业《Python web开发》2.1、2.2节。<br><a id="more"></a></p>
 <h1 id="Why-Django"><a href="#Why-Django" class="headerlink" title="Why Django"></a>Why Django</h1><p>在一定的时间内，有限的技术情况下，建设一个高质量的网站，Django几乎成了唯一的方案。<br>Django把所有可能性都考虑到了，从这种程度上看复杂就意味着全面，毕竟时间更重要！</p>
@@ -574,7 +638,7 @@ return HTTPResponse(web_page)  # web_page表示的网页字符串转化具体可
     
     </summary>
     
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+      <category term="IT" scheme="http://yoursite.com/categories/IT/"/>
     
     
       <category term="notes" scheme="http://yoursite.com/tags/notes/"/>
