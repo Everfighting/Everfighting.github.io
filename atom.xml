@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-30T09:26:36.263Z</updated>
+  <updated>2017-07-30T09:46:54.374Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://yoursite.com/2017/07/30/yangzhou-marathon-2016/"/>
     <id>http://yoursite.com/2017/07/30/yangzhou-marathon-2016/</id>
     <published>2017-07-30T09:24:32.000Z</published>
-    <updated>2017-07-30T09:26:36.263Z</updated>
+    <updated>2017-07-30T09:46:54.374Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/307154-4d0cccc854222969.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="跑步数据.jpg"><br><a id="more"></a><br>4月24日在扬州参加了第十届扬州鉴真国际半程马拉松赛，净成绩2:07:34，没有冲刺，完成的相对轻松。</p>
+    <content type="html"><![CDATA[<p>4月24日在扬州参加了第十届扬州鉴真国际半程马拉松赛，净成绩2:07:34，没有冲刺，完成的相对轻松。<br><a id="more"></a><br><img src="http://upload-images.jianshu.io/upload_images/307154-4d0cccc854222969.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="跑步数据.jpg"></p>
 <h1 id="赛事评价"><a href="#赛事评价" class="headerlink" title="赛事评价"></a>赛事评价</h1><h2 id="组织不力的地方："><a href="#组织不力的地方：" class="headerlink" title="组织不力的地方："></a>组织不力的地方：</h2><ul>
 <li>赛事道路封闭点离起跑点太远，导致很多人存包来不及。</li>
 <li>没有提前通知扫尾车如何存包，导致参赛选手很愤怒。</li>
@@ -45,7 +45,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/307154-4d0cccc854222969.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;跑步数据.jpg&quot;&gt;&lt;br&gt;
+      &lt;p&gt;4月24日在扬州参加了第十届扬州鉴真国际半程马拉松赛，净成绩2:07:34，没有冲刺，完成的相对轻松。&lt;br&gt;
     
     </summary>
     
@@ -829,6 +829,113 @@ return HTTPResponse(web_page)  # web_page表示的网页字符串转化具体可
   </entry>
   
   <entry>
+    <title>python web开发笔记二：Semantic UI框架</title>
+    <link href="http://yoursite.com/2017/07/26/python-web-02/"/>
+    <id>http://yoursite.com/2017/07/26/python-web-02/</id>
+    <published>2017-07-26T13:23:21.000Z</published>
+    <updated>2017-07-26T13:33:04.712Z</updated>
+    
+    <content type="html"><![CDATA[<p>该笔记整理自网易微专业《Python web开发》1.2、1.3、1.4节<br><a id="more"></a></p>
+<h1 id="CSS框架"><a href="#CSS框架" class="headerlink" title="CSS框架"></a>CSS框架</h1><ul>
+<li>What:<br>简单地说，就是一些事先写好的css集合，你只需要给你的html元素加上一些特定的类，就可以快速的得到一些想要的效果。</li>
+<li>Why:<br>简单、快速、方便、避免CSS中的各种坑。</li>
+<li>Which:<br>Semantic UI是一款语义化的前端开发框架，Semantic是围绕自然交流语言而架构的，这使得开发更加直观、易于理解。</li>
+</ul>
+<h1 id="Semantic-UI"><a href="#Semantic-UI" class="headerlink" title="Semantic UI"></a>Semantic UI</h1><h2 id="框架特色"><a href="#框架特色" class="headerlink" title="框架特色"></a>框架特色</h2><p>Semantic UI把词语和类看成一个个可以任意组合的概念，使用如：名词/修饰语，文字序列以及诸多的自然语法来定义类名。</p>
+<h2 id="常见用法"><a href="#常见用法" class="headerlink" title="常见用法"></a>常见用法</h2><pre><code>- 名词：具体的元素
+ui segment
+ui button
+ui image
+ui container
+ui divider
+ui header
+ui label
+
+- 形容词：
+very padded：文字的间距靠里
+vertical：去掉边框的圆角、阴影和缝隙
+inverted：颜色需要反选填充
+basic: 处理黑边问题
+fixed: 固定位置
+Mini Tiny Small Medium Large Big Huge Massive：大小
+circular：圆形
+
+- 图标名称：
+share icon
+wifi icon
+</code></pre><h2 id="两种引用方式"><a href="#两种引用方式" class="headerlink" title="两种引用方式"></a>两种引用方式</h2><ul>
+<li><p>本地引用</p>
+<blockquote>
+<p>1.把 Semantic CSS 的文件放到 CSS 文件夹中，记得themes中的fonts和images也要拷贝进来。<br>2.在 html文件的head部分的link中写上：href=”css/semantic.css”<br>如：<link rel="stylesheet" href="css/semantic.css" media="screen" title="no title" charset="utf-8"></p>
+</blockquote>
+</li>
+<li><p>在线引用</p>
+<blockquote>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.css">
+
+</blockquote>
+</li>
+</ul>
+<h2 id="案例分析"><a href="#案例分析" class="headerlink" title="案例分析"></a>案例分析</h2><ul>
+<li><p>Task1: 制作博客标签</p>
+<pre><code>ui red right ribbon label  # ui label标签样式 ribbon形状 right方向 
+ui inverted blue button # 蓝色边框的按钮
+ui inverted  vertical very padded  segment # vertical消除圆角、阴影、缝隙 very padded内容往中间聚拢
+ui fixed inverted menu # 固定在某个位置的菜单，具体菜单项用ui item表示
+</code></pre></li>
+<li><p>Task2: 绘制美国队长盾牌</p>
+</li>
+</ul>
+<div class="ui inverted red circular segment">    #大圆，内嵌红色<br>    <div class="ui circular segment">        #中圆，内嵌白色<br>        <div class="ui inverted red circular segment"> #小圆，内嵌红色<br>            <i class="circular inverted blue big star icon"></i> # 中心圆，圆中嵌有五角星，五角星与圆之间用蓝色填充，星内部白色填充<br>            </div><br>        </div><br>    </div><br>
+
+<h2 id="Semantic-UI网格系统"><a href="#Semantic-UI网格系统" class="headerlink" title="Semantic UI网格系统"></a>Semantic UI网格系统</h2><p>ui grid是Semantic框架中用来进行页面动态布局的工具。<br>主要用法分为两种：定宽网格和定栏网格</p>
+<ul>
+<li><p>定宽网格：页面一共16栏，明确知道每一块横跨宽度<br>  – ui grid </p>
+<pre><code>-- ten wide column
+-- six wide column
+</code></pre></li>
+<li><p>定栏网格：要分为几栏，一般为奇数，偶数可转化为定宽<br>  –ui three column grid</p>
+<pre><code>-- column
+-- column
+-- column
+</code></pre></li>
+<li><p>嵌套</p>
+<pre><code>-- ui three column grid container
+    -- column
+        -- ui two column grid
+        -- column
+        -- column
+    -- column
+    -- column
+</code></pre></li>
+</ul>
+<h1 id="其他补充"><a href="#其他补充" class="headerlink" title="其他补充"></a>其他补充</h1><h2 id="ATOM使用技巧"><a href="#ATOM使用技巧" class="headerlink" title="ATOM使用技巧"></a>ATOM使用技巧</h2><ul>
+<li>semantic.css打开的话就可以自动联想内部的组件。</li>
+<li>左上角蓝色点表示没有保存。</li>
+<li>安装browser-plus插件能够直接在编辑器里面看到显示效果，点击闪电标签实时同步修改的效果。</li>
+<li>输入lorem会自动生成被打乱顺序的拉丁字母用于填充。</li>
+<li>setting中修改show indent guide可以显示atom的对齐线。</li>
+</ul>
+<h2 id="拓展阅读"><a href="#拓展阅读" class="headerlink" title="拓展阅读"></a>拓展阅读</h2><ul>
+<li><a href="https://segmentfault.com/a/1190000000407283" target="_blank" rel="external">2014 年 15 款最棒的 HTML CSS 框架</a></li>
+</ul>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>该笔记源自网易微专业《Python web开发》1.2、1.3、1.4节</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;该笔记整理自网易微专业《Python web开发》1.2、1.3、1.4节&lt;br&gt;
+    
+    </summary>
+    
+      <category term="IT" scheme="http://yoursite.com/categories/IT/"/>
+    
+    
+      <category term="notes" scheme="http://yoursite.com/tags/notes/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python web开发笔记五：Django开发进阶</title>
     <link href="http://yoursite.com/2017/07/26/python-web-05/"/>
     <id>http://yoursite.com/2017/07/26/python-web-05/</id>
@@ -999,113 +1106,6 @@ for e in es:
     <summary type="html">
     
       &lt;p&gt;该笔记源自网易微专业《Python web开发》2.2节&lt;br&gt;
-    
-    </summary>
-    
-      <category term="IT" scheme="http://yoursite.com/categories/IT/"/>
-    
-    
-      <category term="notes" scheme="http://yoursite.com/tags/notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python web开发笔记二：Semantic UI框架</title>
-    <link href="http://yoursite.com/2017/07/26/python-web-02/"/>
-    <id>http://yoursite.com/2017/07/26/python-web-02/</id>
-    <published>2017-07-26T13:23:21.000Z</published>
-    <updated>2017-07-26T13:33:04.712Z</updated>
-    
-    <content type="html"><![CDATA[<p>该笔记整理自网易微专业《Python web开发》1.2、1.3、1.4节<br><a id="more"></a></p>
-<h1 id="CSS框架"><a href="#CSS框架" class="headerlink" title="CSS框架"></a>CSS框架</h1><ul>
-<li>What:<br>简单地说，就是一些事先写好的css集合，你只需要给你的html元素加上一些特定的类，就可以快速的得到一些想要的效果。</li>
-<li>Why:<br>简单、快速、方便、避免CSS中的各种坑。</li>
-<li>Which:<br>Semantic UI是一款语义化的前端开发框架，Semantic是围绕自然交流语言而架构的，这使得开发更加直观、易于理解。</li>
-</ul>
-<h1 id="Semantic-UI"><a href="#Semantic-UI" class="headerlink" title="Semantic UI"></a>Semantic UI</h1><h2 id="框架特色"><a href="#框架特色" class="headerlink" title="框架特色"></a>框架特色</h2><p>Semantic UI把词语和类看成一个个可以任意组合的概念，使用如：名词/修饰语，文字序列以及诸多的自然语法来定义类名。</p>
-<h2 id="常见用法"><a href="#常见用法" class="headerlink" title="常见用法"></a>常见用法</h2><pre><code>- 名词：具体的元素
-ui segment
-ui button
-ui image
-ui container
-ui divider
-ui header
-ui label
-
-- 形容词：
-very padded：文字的间距靠里
-vertical：去掉边框的圆角、阴影和缝隙
-inverted：颜色需要反选填充
-basic: 处理黑边问题
-fixed: 固定位置
-Mini Tiny Small Medium Large Big Huge Massive：大小
-circular：圆形
-
-- 图标名称：
-share icon
-wifi icon
-</code></pre><h2 id="两种引用方式"><a href="#两种引用方式" class="headerlink" title="两种引用方式"></a>两种引用方式</h2><ul>
-<li><p>本地引用</p>
-<blockquote>
-<p>1.把 Semantic CSS 的文件放到 CSS 文件夹中，记得themes中的fonts和images也要拷贝进来。<br>2.在 html文件的head部分的link中写上：href=”css/semantic.css”<br>如：<link rel="stylesheet" href="css/semantic.css" media="screen" title="no title" charset="utf-8"></p>
-</blockquote>
-</li>
-<li><p>在线引用</p>
-<blockquote>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.css">
-
-</blockquote>
-</li>
-</ul>
-<h2 id="案例分析"><a href="#案例分析" class="headerlink" title="案例分析"></a>案例分析</h2><ul>
-<li><p>Task1: 制作博客标签</p>
-<pre><code>ui red right ribbon label  # ui label标签样式 ribbon形状 right方向 
-ui inverted blue button # 蓝色边框的按钮
-ui inverted  vertical very padded  segment # vertical消除圆角、阴影、缝隙 very padded内容往中间聚拢
-ui fixed inverted menu # 固定在某个位置的菜单，具体菜单项用ui item表示
-</code></pre></li>
-<li><p>Task2: 绘制美国队长盾牌</p>
-</li>
-</ul>
-<div class="ui inverted red circular segment">    #大圆，内嵌红色<br>    <div class="ui circular segment">        #中圆，内嵌白色<br>        <div class="ui inverted red circular segment"> #小圆，内嵌红色<br>            <i class="circular inverted blue big star icon"></i> # 中心圆，圆中嵌有五角星，五角星与圆之间用蓝色填充，星内部白色填充<br>            </div><br>        </div><br>    </div><br>
-
-<h2 id="Semantic-UI网格系统"><a href="#Semantic-UI网格系统" class="headerlink" title="Semantic UI网格系统"></a>Semantic UI网格系统</h2><p>ui grid是Semantic框架中用来进行页面动态布局的工具。<br>主要用法分为两种：定宽网格和定栏网格</p>
-<ul>
-<li><p>定宽网格：页面一共16栏，明确知道每一块横跨宽度<br>  – ui grid </p>
-<pre><code>-- ten wide column
--- six wide column
-</code></pre></li>
-<li><p>定栏网格：要分为几栏，一般为奇数，偶数可转化为定宽<br>  –ui three column grid</p>
-<pre><code>-- column
--- column
--- column
-</code></pre></li>
-<li><p>嵌套</p>
-<pre><code>-- ui three column grid container
-    -- column
-        -- ui two column grid
-        -- column
-        -- column
-    -- column
-    -- column
-</code></pre></li>
-</ul>
-<h1 id="其他补充"><a href="#其他补充" class="headerlink" title="其他补充"></a>其他补充</h1><h2 id="ATOM使用技巧"><a href="#ATOM使用技巧" class="headerlink" title="ATOM使用技巧"></a>ATOM使用技巧</h2><ul>
-<li>semantic.css打开的话就可以自动联想内部的组件。</li>
-<li>左上角蓝色点表示没有保存。</li>
-<li>安装browser-plus插件能够直接在编辑器里面看到显示效果，点击闪电标签实时同步修改的效果。</li>
-<li>输入lorem会自动生成被打乱顺序的拉丁字母用于填充。</li>
-<li>setting中修改show indent guide可以显示atom的对齐线。</li>
-</ul>
-<h2 id="拓展阅读"><a href="#拓展阅读" class="headerlink" title="拓展阅读"></a>拓展阅读</h2><ul>
-<li><a href="https://segmentfault.com/a/1190000000407283" target="_blank" rel="external">2014 年 15 款最棒的 HTML CSS 框架</a></li>
-</ul>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>该笔记源自网易微专业《Python web开发》1.2、1.3、1.4节</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;该笔记整理自网易微专业《Python web开发》1.2、1.3、1.4节&lt;br&gt;
     
     </summary>
     
