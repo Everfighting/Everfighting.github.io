@@ -3,7 +3,38 @@
   
     
     <entry>
-      <title><![CDATA[see-effective-ip-by-netmasks]]></title>
+      <title><![CDATA[一本《三体》重温三门专业课]]></title>
+      <url>/2017/07/30/three-body/</url>
+      <content type="html"><![CDATA[<p>上个月无意间在图书馆翻了一段《三体》，从此便一发不可收拾。大刘那宏大宇宙观真的让人叹为观止，读时酣畅淋漓，读完意犹未尽。书里面的很多观点与我所接受的专业教育不谋而合，下面简单跟大家介绍下。<br><a id="more"></a></p>
+<h2 id="黑暗森林法-互联网安全"><a href="#黑暗森林法-互联网安全" class="headerlink" title="黑暗森林法(互联网安全)"></a>黑暗森林法(互联网安全)</h2><blockquote>
+<p>宇宙就是一座黑暗森林，每个文明都是带枪的猎人，像幽灵般潜行于林间……如果他发现了别的生命……能做的只有一件事：开枪消灭之！在这片森林中任何暴露自己存在的生命都将很快被消灭。<br>记得当时王仁武哥哥给我们介绍命令行命令，其中有ping命令，该命令一般用来测试网络是否通畅。他补充说，在以前黑客常常会用ping命令攻击网络中的某一IP,可以使对方机器死机或断线。<br>而常用的保护的方式就是隐藏自己的IP地址，防止暴露在网络中。现在回想起来，这不就是典型的互联网界的“黑暗森林”法则？为保自己不受入侵，隐藏自己。</p>
+</blockquote>
+<h2 id="降维攻击（电子商务）"><a href="#降维攻击（电子商务）" class="headerlink" title="降维攻击（电子商务）"></a>降维攻击（电子商务）</h2><blockquote>
+<p>三维宇宙空间由长宽高三个维度组成，而二向箔与三维宇宙接触的瞬间，会使三维宇宙中的一个维度无限蜷缩，从而迫使三维宇宙空间及其中的所有物质向二维宇宙坍塌，并在二维空间中“融化”为只存在长和宽而被剥夺了高度概念的绝对平面。<br>老陆说能够打败谷歌的从来不是另一个谷歌。能够打败QQ也不会是另一个QQ。降维攻击就是哪怕在你在三维空间里面占据了别人不可逾越的优势，你被拉到二维空间里优势瞬间全无。<br>前段时间看到一篇网络神文《银行人与互联网人的犀利问答，银行人完胜！》?<a href="http://dwz.cn/3pghNb" target="_blank" rel="external">http://dwz.cn/3pghNb</a> 这篇文章恰如其分的反应了当今银行人的心态：对于有着国企血统的他们而言，广泛的网点、规范的服务，数十年的一线服务经验岂是这些互联网毛头小子能够短时间超越的？<br>但是他们却不知，在“降维攻击”下，互联网企业只需要利用自己的优势，在线上做客户引流、信贷风控，先下增加金融消费场景，就牢牢把控了产业链的上游。而最终，银行只会沦为这些企业的点钞机，规模大小的差距只会影响到点钞速度的快慢罢了。</p>
+</blockquote>
+<h2 id="执剑人（博弈论）"><a href="#执剑人（博弈论）" class="headerlink" title="执剑人（博弈论）"></a>执剑人（博弈论）</h2><blockquote>
+<p>以威慑者和被威慑者同归于尽为后果进行的威慑，被称为终极威慑。终极威慑的特点是：一旦威慑失败，那么再进行威慑操作对于威慑者来说便毫无意义。终极威慑成功的关键在于，必须使被威慑者相信，如果它不接受威慑目标，就有极大的可能触发威慑操作。<br>在《三体》中，地球上的执剑人只需要确保在三体人发动进攻时，给宇宙广播三体星的坐标这一威胁可置信，则会形成以下博弈矩阵。<br><img src="http://upload-images.jianshu.io/upload_images/307154-8a9afdd379b52283.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="博弈矩阵.png"><br>该博弈矩阵会形成两个纳什均衡，（0，0）和（2,2），对于三体星人来说为了追求自身效用的最大化，故会选择（2,2）不发动对地球的进攻，故能够确保地球的安全。</p>
+</blockquote>
+<p>大学期间懵懵懂懂，很多知识也如同酒肉穿肠而过。细细想来，自己真是幸运，能够碰到那么多好的老师，潜移默化间身上还是沾了些许光。虽不能普照他人，倒也能在无聊的生活中品出些许的韵味。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Read </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> books </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[根据子网掩码判断网段的有效IP地址]]></title>
       <url>/2017/07/30/see-effective-ip-by-netmasks/</url>
       <content type="html"><![CDATA[<p>之前在<a href="http://www.nowcoder.com/" target="_blank" rel="external">牛客网</a>上看到一道关于TCP/IP的题目，当时不是很理解子网掩码的机制没有做出来。<br><a id="more"></a><br>前段时间看《图解TCP/IP》刚好里面有讲到这部分的内容，刚好把这道题解决了，知识点分析的感觉通俗易懂，特此分享下。</p>
 <pre><code>下列选项中,属于&quot;10.174.20.176/28&quot;该网段的有效IP地址是:
@@ -15,6 +46,18 @@ D 10.174.20.192
 <p>同理，将以上知识应用到本题，可得：<br>ip地址是32位每8位为一组的二进制码，由题10.174.20.176/28，指前28位不变，即（10.174.20.不变，还有4位不变，这四位的二进制根据176知位1011）。<br>故，对此网段的有效ip为：10.174.20.1011 0000~10.174.20.1011 1111，排出全0和全1不能用，则ip为：10.174.20.177~10.174.20.190（去掉.176和.191）。<br>答案选B</p>
 ]]></content>
       
+        <categories>
+            
+            <category> IT </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> network </tag>
+            
+        </tags>
         
     </entry>
     
@@ -524,58 +567,6 @@ D 10.174.20.192
     </entry>
     
     <entry>
-      <title><![CDATA[python web开发笔记一：网页开发基础]]></title>
-      <url>/2017/07/26/python-web-01/</url>
-      <content type="html"><![CDATA[<p>该笔记整理自网易微专业《Python web开发》1.1节 网页开发基础。<br><a id="more"></a></p>
-<h1 id="网页基础知识"><a href="#网页基础知识" class="headerlink" title="网页基础知识"></a>网页基础知识</h1><h2 id="网页的构成"><a href="#网页的构成" class="headerlink" title="网页的构成"></a>网页的构成</h2><p>网页由html、css和Javascript构成，html是框架，CSS是样式和装饰，JS则是各项功能实现。我们把网页的组成类比成一栋房子，Html相当于房子的结构，CSS相当于房子的装修装饰，JavaScript相当于房子的水电通信等使用功能。</p>
-<h2 id="HTML基础知识"><a href="#HTML基础知识" class="headerlink" title="HTML基础知识"></a>HTML基础知识</h2><p>HTML(Hyper Text Markup Language)：超文本标记语言，通过各种标签来表示网页的骨架。大概有100种以上的标签。</p>
-<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><h2 id="常用的标签大概有10种左右。"><a href="#常用的标签大概有10种左右。" class="headerlink" title="常用的标签大概有10种左右。"></a>常用的标签大概有10种左右。</h2><p>如：<br>div标签用于组合其他HTML元素，本身无实在意义。<br>ul, li, ol, dl, dt, dd此类标签用于设置带有列表内容的。<br>form表单相关。<br>table表格相关。<br>img 用于图像显示。<br>a标签用于打开链接。</p>
-<h2 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h2><p><a href="https://www.zhihu.com/question/19550864" target="_blank" rel="external">id与class的区别</a><br>只有在绝对确定这个元素只会出现一次的情况下，才应该使用Id。如果你认为以后可能需要相似的元素，就使用Class。</p>
-<p>样式：<br>    <style><br>    .css5_class{ background:#FFF;} /<em> 背景白色 class用‘.’标记</em>/ </p>
-<pre><code>#css5_id{ background:#FF0000;} /* 背景红色 id用‘#’标记*/ 
-&lt;/style&gt; 
-</code></pre><p>HTML:<br>    <div class="css5_class">我在浏览器下浏览，内容背景将是白色</div><br>    <div id="css5_id">我在浏览器下浏览，内容背景将是红色</div> </p>
-<h2 id="标签的嵌套"><a href="#标签的嵌套" class="headerlink" title="标签的嵌套"></a>标签的嵌套</h2><p>网页实际上就是由各类标签嵌套构成，所谓嵌套，就是在成对的标签里加入另一组成对或不成对的标签。外层的标签相对里层的是父级关系，里层相对外层是子级关系。<br>嵌套可以理解成一种逻辑的关系，同样的逻辑关系可以有多种表现样式,好比产品功能流程一致的情况(HTML)，UI设计可以有多个风格(CSS).</p>
-<h2 id="标签-1"><a href="#标签-1" class="headerlink" title="标签"></a><img>标签</h2><p><img> 是一个自闭标签，没有结束</img>。<br>&lt;img src= “1.jpg“ alt=”pic”&gt; src 指 “source”,图像的URL地址,在hmtl同一文件夹下的图片1.jpg，alt是图片的文字描述，在1.jpg无法显示的时候，就会显示pic的文字。在如鼠标放在图片上，会有提示内容，也就是pic.</p>
-<h1 id="常见的页面结构"><a href="#常见的页面结构" class="headerlink" title="常见的页面结构"></a>常见的页面结构</h1><p>header（头部：标签栏，导航栏，banner）；<br>content（内容：文章博客，内容列表）；<br>footer（脚部：网站信息，联系方式等）这三部分组成的。</p>
-<h1 id="专题研究"><a href="#专题研究" class="headerlink" title="专题研究"></a>专题研究</h1><h2 id="HTML引入CSS样式三种方法及优先级"><a href="#HTML引入CSS样式三种方法及优先级" class="headerlink" title="HTML引入CSS样式三种方法及优先级"></a><a href="http://blog.csdn.net/mybelief321/article/details/50188937">HTML引入CSS样式三种方法及优先级</a></h2><p>css的样式引用由3种方式：内联定义、链入内部CSS和链入外部CSS。<br>三者优先级笔记：内联定义最高、内部CSS次之、外部CSS优先级最低。</p>
-<h2 id="块级元素与行内元素"><a href="#块级元素与行内元素" class="headerlink" title="块级元素与行内元素"></a><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Block-level_elements">块级元素</a>与<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Inline_elemente">行内元素</a></h2><p>区别：<br>内容上看：一般情况下，行内元素只能包含数据和其他行内元素。而块级元素可以包含行内元素和其他块级元素。这种结构上的包含继承区别可以使块级元素创建比行内元素更”大型“的结构。<br>格式上看：默认情况下，行内元素不会以新行开始，而块级元素会新起一行。</p>
-<h2 id="自闭标签"><a href="#自闭标签" class="headerlink" title="自闭标签"></a><a href="http://www.pratikbutani.com/2016/01/list-of-html-self-closing-tags/">自闭标签</a></h2><p>常见的自闭标签有：’’’<br />、<hr />、<img />、<input />、<link />、<meta />‘’’</p>
-<h2 id="相对引用和绝对引用"><a href="#相对引用和绝对引用" class="headerlink" title="相对引用和绝对引用"></a><a href="http://write.awthink.net/%E8%87%B4%E7%9F%A5%E5%BD%95/relative-path.html">相对引用和绝对引用</a></h2><p>会判断相对引用的位置及写法。</p>
-<h1 id="其他补充"><a href="#其他补充" class="headerlink" title="其他补充"></a>其他补充</h1><h2 id="Atom编辑器快捷键"><a href="#Atom编辑器快捷键" class="headerlink" title="Atom编辑器快捷键"></a>Atom编辑器快捷键</h2><pre><code>ctrl + D   同时修改多个词 
-ctrl + \   开启/关闭目录树
-ctrl + alt + C   调用颜色插件
-ctrl + /   注释
-</code></pre><h2 id="补充学习资料"><a href="#补充学习资料" class="headerlink" title="补充学习资料"></a><a href="http://www.w3school.com.cn">补充学习资料</a></h2><h2 id="作业知识点补充"><a href="#作业知识点补充" class="headerlink" title="作业知识点补充"></a>作业知识点补充</h2><p><a href="http://www.adminwang.com/html/34.html"><a>标签的用法</a></p>
-<p><a href="http://www.w3school.com.cn/" target="_blank">Visit W3School!</a><br>href参数表示连接转向的地址，可分为内部书签链接和外部网址连接。</p>
-<p>内部书签链接：锚<br>首先，我们在 HTML 文档中对锚进行命名（创建一个书签）：<br><a name="tips">基本的注意事项 - 有用的提示</a><br>然后，我们在同一个文档中创建指向该锚的链接：<br><a href="#tips">有用的提示</a><br>您也可以在其他页面中创建指向该锚的链接：<br><a href="http://www.w3school.com.cn/html/html_links.asp#tips">有用的提示</a></p>
-<p>target参数表示链接打开的方式。</p>
-<pre><code>_parent ：在上一级窗口中打开。
-_blank：在新窗口中打开。
-_self：在同一窗口中打开。（默认）
-_top ：在浏览器的整个窗口中打开，忽略任何框架。
-</code></pre><h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ul>
-<li>该笔记源自网易微专业《Python web开发》1.1节</li>
-<li>同学整理<a href="http://naotu.baidu.com/file/b184fa7c015eb669df13901068bd0598?token=1fd2a1b13fd05a9b">Python web开发 1.1节 课程大纲</a> </li>
-</ul>
-</style></p>]]></content>
-      
-        <categories>
-            
-            <category> IT </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> notes </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[python web开发笔记二：Semantic UI框架]]></title>
       <url>/2017/07/26/python-web-02/</url>
       <content type="html"><![CDATA[<p>该笔记整理自网易微专业《Python web开发》1.2、1.3、1.4节<br><a id="more"></a></p>
@@ -996,6 +987,58 @@ for e in es:
 </code></pre><p>拓展阅读：<br><a href="http://o90wo9y16.bkt.clouddn.com/Django%20%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E7%AC%AC%E4%BA%8C%E8%AF%BE.pdf" target="_blank" rel="external">课堂操作内容文档</a></p>
 <p>备注<br>该笔记源自网易微专业《Python web开发》2.2节</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> IT </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> notes </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[python web开发笔记一：网页开发基础]]></title>
+      <url>/2017/07/26/python-web-01/</url>
+      <content type="html"><![CDATA[<p>该笔记整理自网易微专业《Python web开发》1.1节 网页开发基础。<br><a id="more"></a></p>
+<h1 id="网页基础知识"><a href="#网页基础知识" class="headerlink" title="网页基础知识"></a>网页基础知识</h1><h2 id="网页的构成"><a href="#网页的构成" class="headerlink" title="网页的构成"></a>网页的构成</h2><p>网页由html、css和Javascript构成，html是框架，CSS是样式和装饰，JS则是各项功能实现。我们把网页的组成类比成一栋房子，Html相当于房子的结构，CSS相当于房子的装修装饰，JavaScript相当于房子的水电通信等使用功能。</p>
+<h2 id="HTML基础知识"><a href="#HTML基础知识" class="headerlink" title="HTML基础知识"></a>HTML基础知识</h2><p>HTML(Hyper Text Markup Language)：超文本标记语言，通过各种标签来表示网页的骨架。大概有100种以上的标签。</p>
+<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><h2 id="常用的标签大概有10种左右。"><a href="#常用的标签大概有10种左右。" class="headerlink" title="常用的标签大概有10种左右。"></a>常用的标签大概有10种左右。</h2><p>如：<br>div标签用于组合其他HTML元素，本身无实在意义。<br>ul, li, ol, dl, dt, dd此类标签用于设置带有列表内容的。<br>form表单相关。<br>table表格相关。<br>img 用于图像显示。<br>a标签用于打开链接。</p>
+<h2 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h2><p><a href="https://www.zhihu.com/question/19550864" target="_blank" rel="external">id与class的区别</a><br>只有在绝对确定这个元素只会出现一次的情况下，才应该使用Id。如果你认为以后可能需要相似的元素，就使用Class。</p>
+<p>样式：<br>    <style><br>    .css5_class{ background:#FFF;} /<em> 背景白色 class用‘.’标记</em>/ </p>
+<pre><code>#css5_id{ background:#FF0000;} /* 背景红色 id用‘#’标记*/ 
+&lt;/style&gt; 
+</code></pre><p>HTML:<br>    <div class="css5_class">我在浏览器下浏览，内容背景将是白色</div><br>    <div id="css5_id">我在浏览器下浏览，内容背景将是红色</div> </p>
+<h2 id="标签的嵌套"><a href="#标签的嵌套" class="headerlink" title="标签的嵌套"></a>标签的嵌套</h2><p>网页实际上就是由各类标签嵌套构成，所谓嵌套，就是在成对的标签里加入另一组成对或不成对的标签。外层的标签相对里层的是父级关系，里层相对外层是子级关系。<br>嵌套可以理解成一种逻辑的关系，同样的逻辑关系可以有多种表现样式,好比产品功能流程一致的情况(HTML)，UI设计可以有多个风格(CSS).</p>
+<h2 id="标签-1"><a href="#标签-1" class="headerlink" title="标签"></a><img>标签</h2><p><img> 是一个自闭标签，没有结束</img>。<br>&lt;img src= “1.jpg“ alt=”pic”&gt; src 指 “source”,图像的URL地址,在hmtl同一文件夹下的图片1.jpg，alt是图片的文字描述，在1.jpg无法显示的时候，就会显示pic的文字。在如鼠标放在图片上，会有提示内容，也就是pic.</p>
+<h1 id="常见的页面结构"><a href="#常见的页面结构" class="headerlink" title="常见的页面结构"></a>常见的页面结构</h1><p>header（头部：标签栏，导航栏，banner）；<br>content（内容：文章博客，内容列表）；<br>footer（脚部：网站信息，联系方式等）这三部分组成的。</p>
+<h1 id="专题研究"><a href="#专题研究" class="headerlink" title="专题研究"></a>专题研究</h1><h2 id="HTML引入CSS样式三种方法及优先级"><a href="#HTML引入CSS样式三种方法及优先级" class="headerlink" title="HTML引入CSS样式三种方法及优先级"></a><a href="http://blog.csdn.net/mybelief321/article/details/50188937">HTML引入CSS样式三种方法及优先级</a></h2><p>css的样式引用由3种方式：内联定义、链入内部CSS和链入外部CSS。<br>三者优先级笔记：内联定义最高、内部CSS次之、外部CSS优先级最低。</p>
+<h2 id="块级元素与行内元素"><a href="#块级元素与行内元素" class="headerlink" title="块级元素与行内元素"></a><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Block-level_elements">块级元素</a>与<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Inline_elemente">行内元素</a></h2><p>区别：<br>内容上看：一般情况下，行内元素只能包含数据和其他行内元素。而块级元素可以包含行内元素和其他块级元素。这种结构上的包含继承区别可以使块级元素创建比行内元素更”大型“的结构。<br>格式上看：默认情况下，行内元素不会以新行开始，而块级元素会新起一行。</p>
+<h2 id="自闭标签"><a href="#自闭标签" class="headerlink" title="自闭标签"></a><a href="http://www.pratikbutani.com/2016/01/list-of-html-self-closing-tags/">自闭标签</a></h2><p>常见的自闭标签有：’’’<br />、<hr />、<img />、<input />、<link />、<meta />‘’’</p>
+<h2 id="相对引用和绝对引用"><a href="#相对引用和绝对引用" class="headerlink" title="相对引用和绝对引用"></a><a href="http://write.awthink.net/%E8%87%B4%E7%9F%A5%E5%BD%95/relative-path.html">相对引用和绝对引用</a></h2><p>会判断相对引用的位置及写法。</p>
+<h1 id="其他补充"><a href="#其他补充" class="headerlink" title="其他补充"></a>其他补充</h1><h2 id="Atom编辑器快捷键"><a href="#Atom编辑器快捷键" class="headerlink" title="Atom编辑器快捷键"></a>Atom编辑器快捷键</h2><pre><code>ctrl + D   同时修改多个词 
+ctrl + \   开启/关闭目录树
+ctrl + alt + C   调用颜色插件
+ctrl + /   注释
+</code></pre><h2 id="补充学习资料"><a href="#补充学习资料" class="headerlink" title="补充学习资料"></a><a href="http://www.w3school.com.cn">补充学习资料</a></h2><h2 id="作业知识点补充"><a href="#作业知识点补充" class="headerlink" title="作业知识点补充"></a>作业知识点补充</h2><p><a href="http://www.adminwang.com/html/34.html"><a>标签的用法</a></p>
+<p><a href="http://www.w3school.com.cn/" target="_blank">Visit W3School!</a><br>href参数表示连接转向的地址，可分为内部书签链接和外部网址连接。</p>
+<p>内部书签链接：锚<br>首先，我们在 HTML 文档中对锚进行命名（创建一个书签）：<br><a name="tips">基本的注意事项 - 有用的提示</a><br>然后，我们在同一个文档中创建指向该锚的链接：<br><a href="#tips">有用的提示</a><br>您也可以在其他页面中创建指向该锚的链接：<br><a href="http://www.w3school.com.cn/html/html_links.asp#tips">有用的提示</a></p>
+<p>target参数表示链接打开的方式。</p>
+<pre><code>_parent ：在上一级窗口中打开。
+_blank：在新窗口中打开。
+_self：在同一窗口中打开。（默认）
+_top ：在浏览器的整个窗口中打开，忽略任何框架。
+</code></pre><h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ul>
+<li>该笔记源自网易微专业《Python web开发》1.1节</li>
+<li>同学整理<a href="http://naotu.baidu.com/file/b184fa7c015eb669df13901068bd0598?token=1fd2a1b13fd05a9b">Python web开发 1.1节 课程大纲</a> </li>
+</ul>
+</style></p>]]></content>
       
         <categories>
             

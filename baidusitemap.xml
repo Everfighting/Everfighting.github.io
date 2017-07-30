@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/07/30/good-b-books-about-internet/</loc>
-    <lastmod>2017-07-30T08:51:11.505Z</lastmod>
+    <loc>http://yoursite.com/2017/07/30/three-body/</loc>
+    <lastmod>2017-07-30T09:00:04.327Z</lastmod>
     <data>
         <display>
-        <title>你不可不读的几本互联网科普书</title>
-        <pubTime>2017-07-30T08:46:51.000Z</pubTime>
+        <title>一本《三体》重温三门专业课</title>
+        <pubTime>2017-07-30T08:58:45.000Z</pubTime>
         
         <tag>books</tag>
          
@@ -25,14 +25,39 @@
     
   <url>
     <loc>http://yoursite.com/2017/07/30/see-effective-ip-by-netmasks/</loc>
-    <lastmod>2017-07-30T08:51:02.492Z</lastmod>
+    <lastmod>2017-07-30T08:58:17.723Z</lastmod>
     <data>
         <display>
-        <title>see-effective-ip-by-netmasks</title>
+        <title>根据子网掩码判断网段的有效IP地址</title>
         <pubTime>2017-07-30T08:50:13.000Z</pubTime>
         
+        <tag>network</tag>
+         
          
            
+             
+              <breadCrumb title="IT" url="http://yoursite.com/categories/IT/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/07/30/good-b-books-about-internet/</loc>
+    <lastmod>2017-07-30T08:51:11.505Z</lastmod>
+    <data>
+        <display>
+        <title>你不可不读的几本互联网科普书</title>
+        <pubTime>2017-07-30T08:46:51.000Z</pubTime>
+        
+        <tag>books</tag>
+         
+         
+           
+             
+              <breadCrumb title="Read" url="http://yoursite.com/categories/Read/"/>
+          
         </display>
     </data>
     </url>

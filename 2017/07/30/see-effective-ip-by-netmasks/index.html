@@ -84,7 +84,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Python, python, everfight, 蔡滨彬, 笔记, 码农" />
+  <meta name="keywords" content="network," />
 
 
 
@@ -103,15 +103,16 @@
 
 
 <meta name="description" content="之前在牛客网上看到一道关于TCP/IP的题目，当时不是很理解子网掩码的机制没有做出来。">
+<meta name="keywords" content="network">
 <meta property="og:type" content="article">
-<meta property="og:title" content="see-effective-ip-by-netmasks">
+<meta property="og:title" content="根据子网掩码判断网段的有效IP地址">
 <meta property="og:url" content="http://yoursite.com/2017/07/30/see-effective-ip-by-netmasks/index.html">
 <meta property="og:site_name" content="thoughts of everfight">
 <meta property="og:description" content="之前在牛客网上看到一道关于TCP/IP的题目，当时不是很理解子网掩码的机制没有做出来。">
 <meta property="og:image" content="http://7xsxjz.com1.z0.glb.clouddn.com/%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81.jpg">
-<meta property="og:updated_time" content="2017-07-30T08:51:02.492Z">
+<meta property="og:updated_time" content="2017-07-30T08:58:17.723Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="see-effective-ip-by-netmasks">
+<meta name="twitter:title" content="根据子网掩码判断网段的有效IP地址">
 <meta name="twitter:description" content="之前在牛客网上看到一道关于TCP/IP的题目，当时不是很理解子网掩码的机制没有做出来。">
 <meta name="twitter:image" content="http://7xsxjz.com1.z0.glb.clouddn.com/%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81.jpg">
 
@@ -147,7 +148,7 @@
 
 
 
-  <title>see-effective-ip-by-netmasks | thoughts of everfight</title>
+  <title>根据子网掩码判断网段的有效IP地址 | thoughts of everfight</title>
   
 
 
@@ -359,7 +360,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">see-effective-ip-by-netmasks</h2>
+          <h2 class="post-title" itemprop="name headline">根据子网掩码判断网段的有效IP地址</h2>
         
 
         <div class="post-meta">
@@ -381,6 +382,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/IT/" itemprop="url" rel="index">
+                    <span itemprop="name">IT</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -479,7 +502,7 @@ D 10.174.20.192
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="http://yoursite.com/2017/07/30/see-effective-ip-by-netmasks/" title="see-effective-ip-by-netmasks">http://yoursite.com/2017/07/30/see-effective-ip-by-netmasks/</a>
+      <a href="http://yoursite.com/2017/07/30/see-effective-ip-by-netmasks/" title="根据子网掩码判断网段的有效IP地址">http://yoursite.com/2017/07/30/see-effective-ip-by-netmasks/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -492,6 +515,12 @@ D 10.174.20.192
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/network/" rel="tag"><i class="fa fa-tag"></i> network</a>
+          
+        </div>
       
 
       
@@ -511,6 +540,10 @@ D 10.174.20.192
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/30/three-body/" rel="prev" title="一本《三体》重温三门专业课">
+                一本《三体》重温三门专业课 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -603,7 +636,7 @@ D 10.174.20.192
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-count">21</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -625,7 +658,7 @@ D 10.174.20.192
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -931,7 +964,7 @@ D 10.174.20.192
         var disqus_config = function () {
           this.page.url = 'http://yoursite.com/2017/07/30/see-effective-ip-by-netmasks/';
           this.page.identifier = '2017/07/30/see-effective-ip-by-netmasks/';
-          this.page.title = 'see-effective-ip-by-netmasks';
+          this.page.title = '根据子网掩码判断网段的有效IP地址';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://everfight-club.disqus.com/embed.js';
