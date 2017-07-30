@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>thoughts of everfight</title>
-  <subtitle>everfight’s blog</subtitle>
+  <subtitle>蔡滨彬的博客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-30T08:22:26.637Z</updated>
+  <updated>2017-07-30T08:31:17.020Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,11 +20,9 @@
     <link href="http://yoursite.com/2017/07/30/Zootopia/"/>
     <id>http://yoursite.com/2017/07/30/Zootopia/</id>
     <published>2017-07-30T08:17:59.000Z</published>
-    <updated>2017-07-30T08:22:26.637Z</updated>
+    <updated>2017-07-30T08:31:17.020Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://img1.doubanio.com/view/photo/raw/public/p2315672647.jpg" alt="疯狂动物城"></p>
-<p>最近《疯狂动物城》很火，自己也忍不住去刷了两遍，感觉很过瘾。回过头来想想，这部片子到底好在哪里？</p>
-<p>除去技术上的牛叉外，我个人认为有以下几点做的很好！</p>
+    <content type="html"><![CDATA[<p>最近《疯狂动物城》很火，自己也忍不住去刷了两遍，感觉很过瘾。回过头来想想，这部片子到底好在哪里？<br><a id="more"></a><br>除去技术上的牛叉外，我个人认为有以下几点做的很好！</p>
 <p>1、现实细节的映射<br>   片名：Zootopia 暗指乌托邦。<br>   手机：萝卜牌手机。<br>   咖啡：恶搞星巴克咖啡名。<br>   电影：恶搞以往电影名。<br>   音乐：恶搞各种歌曲名。<br>   住宿：大城市的租住条件恶劣。</p>
 <p>2、无处不在的对比冲突<br>1)兔朱迪与爸妈之间关于警察职业的对话，反映出的两代人价值观的差异。<br>父母追求稳定安逸，朱迪勇于尝试，喜欢挑战。她说，如果没有兔子做过当过警察，那就让我做第一个吧。<br>2)充满希望，一心想干一场大事业的兔子，第一天却被派了贴罚单的任务。<br>3)开头的食肉动物的情景剧，到后面食肉动物野蛮化，再到最后狐狸被射击之后的表演与开头相呼应。<br>4)黑帮老大大先生的出场，很具喜感。另狐狸胆战心惊的不是被禁熊，而是之小老鼠。<br>5)小时候经常欺负兔子的小痞子狐狸，长大之后学得糕点手艺，跟兔子们相处很愉快。<br>6)兔子跟狐狸第一次去见大先生被恐吓，扔下水道冻死。第二次询问黄鼠狼的时候也用了同样的手法。</p>
 <p>3、精妙绝伦的伏笔<br>1)羊副市长在警校毕业典礼上的拍照的尴尬，和对兔子说要为食草动物争光。这里暗含了羊副市长后期有可能是反面角色，挑起食肉动物的争端。<br>2)兔子训练的时候掉进了马桶里，后期闯入监狱无法逃脱时急中生智想到通过马桶下水道逃脱。<br>3)在追击黄鼠狼的时候无意间救助了大先生的女儿，到后期被大先生抓，大先生帮忙审讯黄鼠狼埋下了伏笔。<br>4)树懒行动缓慢，办事效率低下。但是开车却能狂飙，估计是反射弧太长了，油门松不开。<br>5)录音笔的妙用，第一次兔子录音偷税事项胁迫狐狸帮忙查案，第二次狐狸录道歉音吐槽兔子，第三次狐狸兔子表演假装野蛮化，诱使羊副市长露出马脚。</p>
@@ -35,8 +33,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://img1.doubanio.com/view/photo/raw/public/p2315672647.jpg&quot; alt=&quot;疯狂动物城&quot;&gt;&lt;/p&gt;
-&lt;p&gt;最近《疯狂动物城》很火，自己也忍不住去刷了两遍，感觉很过瘾。回过头来想想，这部片子到
+      &lt;p&gt;最近《疯狂动物城》很火，自己也忍不住去刷了两遍，感觉很过瘾。回过头来想想，这部片子到底好在哪里？&lt;br&gt;
     
     </summary>
     
@@ -512,63 +509,49 @@
   </entry>
   
   <entry>
-    <title>python web开发笔记三：CSS基础</title>
-    <link href="http://yoursite.com/2017/07/26/python-web-03/"/>
-    <id>http://yoursite.com/2017/07/26/python-web-03/</id>
+    <title>python web开发笔记一：网页开发基础</title>
+    <link href="http://yoursite.com/2017/07/26/python-web-01/"/>
+    <id>http://yoursite.com/2017/07/26/python-web-01/</id>
     <published>2017-07-26T13:23:21.000Z</published>
-    <updated>2017-07-28T07:05:29.561Z</updated>
+    <updated>2017-07-28T07:05:24.250Z</updated>
     
-    <content type="html"><![CDATA[<p>该笔记源自网易微专业《Python web开发》1.4、1.5、1.6、1.7节<br><a id="more"></a></p>
-<h1 id="CSS常用选择器"><a href="#CSS常用选择器" class="headerlink" title="CSS常用选择器"></a>CSS常用选择器</h1><pre><code> - 通配符选择器 *
- - id选择器(id #)
- - 类选择器(class .)
- - 元素选择器(E)
- - 后代选择器(E F)
- - 子元素选择器(E&gt;F)
- - 相邻兄弟元素选择器(E+F)
- - 群组选择器(selector1,selector2,...,selectorN)
- - nth选择器：
-fist-child: 选择某个元素的第一个子元素
-last-child: 选择某个元素的最后一个子元素
-</code></pre><h1 id="选择器权重"><a href="#选择器权重" class="headerlink" title="选择器权重"></a>选择器权重</h1><p>根据样式所在位置：!improtant &gt; 内联样式 &gt; style标签 &gt; link标签。<br>计算方式：</p>
-<blockquote>
-<p>一个行内样式+1000，一个id+100，一个属性选择器/class或者伪类+10，一个元素名，或者伪元素+1。其他规则见拓展阅读。</p>
-</blockquote>
-<h1 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h1><p><img src="http://upload-images.jianshu.io/upload_images/307154-bf1e7c46ec514827.gif?imageMogr2/auto-orient/strip" alt="盒模型"><br>box-sizing:border-box：此时元素的内边距和边框不再会增加它的宽度，更便于理解和计算。</p>
-<h1 id="CSS常用属性："><a href="#CSS常用属性：" class="headerlink" title="CSS常用属性："></a>CSS常用属性：</h1><pre><code>- 背景：
-background-color：#9cbfcc;
-background-repeat: repeat;
-background:url(&apos;images/grass.png&apos;);
-background-size: contain;（完全限制的设定的大小内部）
-- 方位：
-padding: 0 20px 30px 0 (上 右 下 左)
-margin-right: 10px;
-text-align：left;
-display:block;(in-line,inline-block)
-- 字体：
-font-family: 字体
-font-size: 大小
-- 边框：
-border-radius: 圆角半径设置
-border: solid 8px rgb(210, 157, 65);  样式，粗细，颜色
-</code></pre><h1 id="定位技术"><a href="#定位技术" class="headerlink" title="定位技术"></a>定位技术</h1><h2 id="relative-相对定位"><a href="#relative-相对定位" class="headerlink" title="relative(相对定位)"></a>relative(相对定位)</h2><p>设置了相对定位之后，通过修改top,left,bottom,right值，元素会在自身文档流所在位置上被移动，其他的元素则不会调整位置来弥补它偏离后剩下的空隙。</p>
-<h2 id="absolute-绝对定位-："><a href="#absolute-绝对定位-：" class="headerlink" title="absolute(绝对定位)："></a>absolute(绝对定位)：</h2><p>设置了绝对定位之后，元素脱离文档流，其他的元素会调整位置来弥补它偏离后剩下的空隙。元素偏移是相对于是它最近的设置了定位属性（position为relative或者absolute，值不为static）的元素。</p>
-<h2 id="fixed-固定定位-："><a href="#fixed-固定定位-：" class="headerlink" title="fixed(固定定位)："></a>fixed(固定定位)：</h2><p>设置了固定定位之后，元素相对的偏移的参考是可视窗口，即使页面滚动，元素仍然会在固定位置。<br>重心修改：<br>transform: translate(-50%,-50%)，坐标原点从左上角改到了中心位置。</p>
-<h1 id="拓展阅读"><a href="#拓展阅读" class="headerlink" title="拓展阅读"></a>拓展阅读</h1><ul>
-<li><a href="http://flukeout.github.io/" target="_blank" rel="external">选择器小游戏</a></li>
-<li><a href="http://www.w3cplus.com/css/css-specificity-things-you-should-know.html" target="_blank" rel="external">你应该知道的一些事情——CSS权重</a></li>
-<li><a href="http://www.w3school.com.cn/css/css_boxmodel.asp" target="_blank" rel="external">盒模型详解</a></li>
-<li><a href="http://ww3.sinaimg.cn/mw690/c5131475jw1eodf2f2oiaj20c636u1kx.jpg" target="_blank" rel="external">常用CSS属性列表</a></li>
-<li><a href="http://www.html-js.com/article/3044" target="_blank" rel="external">absolute与relative</a></li>
-<li><a href="http://zh.learnlayout.com" target="_blank" rel="external">学习CSS布局</a></li>
-<li><a href="https://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block#" target="_blank" rel="external">inline-vs-inline-block</a></li>
+    <content type="html"><![CDATA[<p>该笔记整理自网易微专业《Python web开发》1.1节 网页开发基础。<br><a id="more"></a></p>
+<h1 id="网页基础知识"><a href="#网页基础知识" class="headerlink" title="网页基础知识"></a>网页基础知识</h1><h2 id="网页的构成"><a href="#网页的构成" class="headerlink" title="网页的构成"></a>网页的构成</h2><p>网页由html、css和Javascript构成，html是框架，CSS是样式和装饰，JS则是各项功能实现。我们把网页的组成类比成一栋房子，Html相当于房子的结构，CSS相当于房子的装修装饰，JavaScript相当于房子的水电通信等使用功能。</p>
+<h2 id="HTML基础知识"><a href="#HTML基础知识" class="headerlink" title="HTML基础知识"></a>HTML基础知识</h2><p>HTML(Hyper Text Markup Language)：超文本标记语言，通过各种标签来表示网页的骨架。大概有100种以上的标签。</p>
+<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><h2 id="常用的标签大概有10种左右。"><a href="#常用的标签大概有10种左右。" class="headerlink" title="常用的标签大概有10种左右。"></a>常用的标签大概有10种左右。</h2><p>如：<br>div标签用于组合其他HTML元素，本身无实在意义。<br>ul, li, ol, dl, dt, dd此类标签用于设置带有列表内容的。<br>form表单相关。<br>table表格相关。<br>img 用于图像显示。<br>a标签用于打开链接。</p>
+<h2 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h2><p><a href="https://www.zhihu.com/question/19550864" target="_blank" rel="external">id与class的区别</a><br>只有在绝对确定这个元素只会出现一次的情况下，才应该使用Id。如果你认为以后可能需要相似的元素，就使用Class。</p>
+<p>样式：<br>    <style><br>    .css5_class{ background:#FFF;} /<em> 背景白色 class用‘.’标记</em>/ </p>
+<pre><code>#css5_id{ background:#FF0000;} /* 背景红色 id用‘#’标记*/ 
+&lt;/style&gt; 
+</code></pre><p>HTML:<br>    <div class="css5_class">我在浏览器下浏览，内容背景将是白色</div><br>    <div id="css5_id">我在浏览器下浏览，内容背景将是红色</div> </p>
+<h2 id="标签的嵌套"><a href="#标签的嵌套" class="headerlink" title="标签的嵌套"></a>标签的嵌套</h2><p>网页实际上就是由各类标签嵌套构成，所谓嵌套，就是在成对的标签里加入另一组成对或不成对的标签。外层的标签相对里层的是父级关系，里层相对外层是子级关系。<br>嵌套可以理解成一种逻辑的关系，同样的逻辑关系可以有多种表现样式,好比产品功能流程一致的情况(HTML)，UI设计可以有多个风格(CSS).</p>
+<h2 id="标签-1"><a href="#标签-1" class="headerlink" title="标签"></a><img>标签</h2><p><img> 是一个自闭标签，没有结束</img>。<br>&lt;img src= “1.jpg“ alt=”pic”&gt; src 指 “source”,图像的URL地址,在hmtl同一文件夹下的图片1.jpg，alt是图片的文字描述，在1.jpg无法显示的时候，就会显示pic的文字。在如鼠标放在图片上，会有提示内容，也就是pic.</p>
+<h1 id="常见的页面结构"><a href="#常见的页面结构" class="headerlink" title="常见的页面结构"></a>常见的页面结构</h1><p>header（头部：标签栏，导航栏，banner）；<br>content（内容：文章博客，内容列表）；<br>footer（脚部：网站信息，联系方式等）这三部分组成的。</p>
+<h1 id="专题研究"><a href="#专题研究" class="headerlink" title="专题研究"></a>专题研究</h1><h2 id="HTML引入CSS样式三种方法及优先级"><a href="#HTML引入CSS样式三种方法及优先级" class="headerlink" title="HTML引入CSS样式三种方法及优先级"></a><a href="http://blog.csdn.net/mybelief321/article/details/50188937">HTML引入CSS样式三种方法及优先级</a></h2><p>css的样式引用由3种方式：内联定义、链入内部CSS和链入外部CSS。<br>三者优先级笔记：内联定义最高、内部CSS次之、外部CSS优先级最低。</p>
+<h2 id="块级元素与行内元素"><a href="#块级元素与行内元素" class="headerlink" title="块级元素与行内元素"></a><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Block-level_elements">块级元素</a>与<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Inline_elemente">行内元素</a></h2><p>区别：<br>内容上看：一般情况下，行内元素只能包含数据和其他行内元素。而块级元素可以包含行内元素和其他块级元素。这种结构上的包含继承区别可以使块级元素创建比行内元素更”大型“的结构。<br>格式上看：默认情况下，行内元素不会以新行开始，而块级元素会新起一行。</p>
+<h2 id="自闭标签"><a href="#自闭标签" class="headerlink" title="自闭标签"></a><a href="http://www.pratikbutani.com/2016/01/list-of-html-self-closing-tags/">自闭标签</a></h2><p>常见的自闭标签有：’’’<br />、<hr />、<img />、<input />、<link />、<meta />‘’’</p>
+<h2 id="相对引用和绝对引用"><a href="#相对引用和绝对引用" class="headerlink" title="相对引用和绝对引用"></a><a href="http://write.awthink.net/%E8%87%B4%E7%9F%A5%E5%BD%95/relative-path.html">相对引用和绝对引用</a></h2><p>会判断相对引用的位置及写法。</p>
+<h1 id="其他补充"><a href="#其他补充" class="headerlink" title="其他补充"></a>其他补充</h1><h2 id="Atom编辑器快捷键"><a href="#Atom编辑器快捷键" class="headerlink" title="Atom编辑器快捷键"></a>Atom编辑器快捷键</h2><pre><code>ctrl + D   同时修改多个词 
+ctrl + \   开启/关闭目录树
+ctrl + alt + C   调用颜色插件
+ctrl + /   注释
+</code></pre><h2 id="补充学习资料"><a href="#补充学习资料" class="headerlink" title="补充学习资料"></a><a href="http://www.w3school.com.cn">补充学习资料</a></h2><h2 id="作业知识点补充"><a href="#作业知识点补充" class="headerlink" title="作业知识点补充"></a>作业知识点补充</h2><p><a href="http://www.adminwang.com/html/34.html"><a>标签的用法</a></p>
+<p><a href="http://www.w3school.com.cn/" target="_blank">Visit W3School!</a><br>href参数表示连接转向的地址，可分为内部书签链接和外部网址连接。</p>
+<p>内部书签链接：锚<br>首先，我们在 HTML 文档中对锚进行命名（创建一个书签）：<br><a name="tips">基本的注意事项 - 有用的提示</a><br>然后，我们在同一个文档中创建指向该锚的链接：<br><a href="#tips">有用的提示</a><br>您也可以在其他页面中创建指向该锚的链接：<br><a href="http://www.w3school.com.cn/html/html_links.asp#tips">有用的提示</a></p>
+<p>target参数表示链接打开的方式。</p>
+<pre><code>_parent ：在上一级窗口中打开。
+_blank：在新窗口中打开。
+_self：在同一窗口中打开。（默认）
+_top ：在浏览器的整个窗口中打开，忽略任何框架。
+</code></pre><h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ul>
+<li>该笔记源自网易微专业《Python web开发》1.1节</li>
+<li>同学整理<a href="http://naotu.baidu.com/file/b184fa7c015eb669df13901068bd0598?token=1fd2a1b13fd05a9b">Python web开发 1.1节 课程大纲</a> </li>
 </ul>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>该笔记源自网易微专业《Python web开发》1.4、1.5、1.6、1.7节</p>
-]]></content>
+</style></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;该笔记源自网易微专业《Python web开发》1.4、1.5、1.6、1.7节&lt;br&gt;
+      &lt;p&gt;该笔记整理自网易微专业《Python web开发》1.1节 网页开发基础。&lt;br&gt;
     
     </summary>
     
@@ -746,49 +729,63 @@ ui fixed inverted menu # 固定在某个位置的菜单，具体菜单项用ui i
   </entry>
   
   <entry>
-    <title>python web开发笔记一：网页开发基础</title>
-    <link href="http://yoursite.com/2017/07/26/python-web-01/"/>
-    <id>http://yoursite.com/2017/07/26/python-web-01/</id>
+    <title>python web开发笔记三：CSS基础</title>
+    <link href="http://yoursite.com/2017/07/26/python-web-03/"/>
+    <id>http://yoursite.com/2017/07/26/python-web-03/</id>
     <published>2017-07-26T13:23:21.000Z</published>
-    <updated>2017-07-28T07:05:24.250Z</updated>
+    <updated>2017-07-28T07:05:29.561Z</updated>
     
-    <content type="html"><![CDATA[<p>该笔记整理自网易微专业《Python web开发》1.1节 网页开发基础。<br><a id="more"></a></p>
-<h1 id="网页基础知识"><a href="#网页基础知识" class="headerlink" title="网页基础知识"></a>网页基础知识</h1><h2 id="网页的构成"><a href="#网页的构成" class="headerlink" title="网页的构成"></a>网页的构成</h2><p>网页由html、css和Javascript构成，html是框架，CSS是样式和装饰，JS则是各项功能实现。我们把网页的组成类比成一栋房子，Html相当于房子的结构，CSS相当于房子的装修装饰，JavaScript相当于房子的水电通信等使用功能。</p>
-<h2 id="HTML基础知识"><a href="#HTML基础知识" class="headerlink" title="HTML基础知识"></a>HTML基础知识</h2><p>HTML(Hyper Text Markup Language)：超文本标记语言，通过各种标签来表示网页的骨架。大概有100种以上的标签。</p>
-<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><h2 id="常用的标签大概有10种左右。"><a href="#常用的标签大概有10种左右。" class="headerlink" title="常用的标签大概有10种左右。"></a>常用的标签大概有10种左右。</h2><p>如：<br>div标签用于组合其他HTML元素，本身无实在意义。<br>ul, li, ol, dl, dt, dd此类标签用于设置带有列表内容的。<br>form表单相关。<br>table表格相关。<br>img 用于图像显示。<br>a标签用于打开链接。</p>
-<h2 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h2><p><a href="https://www.zhihu.com/question/19550864" target="_blank" rel="external">id与class的区别</a><br>只有在绝对确定这个元素只会出现一次的情况下，才应该使用Id。如果你认为以后可能需要相似的元素，就使用Class。</p>
-<p>样式：<br>    <style><br>    .css5_class{ background:#FFF;} /<em> 背景白色 class用‘.’标记</em>/ </p>
-<pre><code>#css5_id{ background:#FF0000;} /* 背景红色 id用‘#’标记*/ 
-&lt;/style&gt; 
-</code></pre><p>HTML:<br>    <div class="css5_class">我在浏览器下浏览，内容背景将是白色</div><br>    <div id="css5_id">我在浏览器下浏览，内容背景将是红色</div> </p>
-<h2 id="标签的嵌套"><a href="#标签的嵌套" class="headerlink" title="标签的嵌套"></a>标签的嵌套</h2><p>网页实际上就是由各类标签嵌套构成，所谓嵌套，就是在成对的标签里加入另一组成对或不成对的标签。外层的标签相对里层的是父级关系，里层相对外层是子级关系。<br>嵌套可以理解成一种逻辑的关系，同样的逻辑关系可以有多种表现样式,好比产品功能流程一致的情况(HTML)，UI设计可以有多个风格(CSS).</p>
-<h2 id="标签-1"><a href="#标签-1" class="headerlink" title="标签"></a><img>标签</h2><p><img> 是一个自闭标签，没有结束</img>。<br>&lt;img src= “1.jpg“ alt=”pic”&gt; src 指 “source”,图像的URL地址,在hmtl同一文件夹下的图片1.jpg，alt是图片的文字描述，在1.jpg无法显示的时候，就会显示pic的文字。在如鼠标放在图片上，会有提示内容，也就是pic.</p>
-<h1 id="常见的页面结构"><a href="#常见的页面结构" class="headerlink" title="常见的页面结构"></a>常见的页面结构</h1><p>header（头部：标签栏，导航栏，banner）；<br>content（内容：文章博客，内容列表）；<br>footer（脚部：网站信息，联系方式等）这三部分组成的。</p>
-<h1 id="专题研究"><a href="#专题研究" class="headerlink" title="专题研究"></a>专题研究</h1><h2 id="HTML引入CSS样式三种方法及优先级"><a href="#HTML引入CSS样式三种方法及优先级" class="headerlink" title="HTML引入CSS样式三种方法及优先级"></a><a href="http://blog.csdn.net/mybelief321/article/details/50188937">HTML引入CSS样式三种方法及优先级</a></h2><p>css的样式引用由3种方式：内联定义、链入内部CSS和链入外部CSS。<br>三者优先级笔记：内联定义最高、内部CSS次之、外部CSS优先级最低。</p>
-<h2 id="块级元素与行内元素"><a href="#块级元素与行内元素" class="headerlink" title="块级元素与行内元素"></a><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Block-level_elements">块级元素</a>与<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Inline_elemente">行内元素</a></h2><p>区别：<br>内容上看：一般情况下，行内元素只能包含数据和其他行内元素。而块级元素可以包含行内元素和其他块级元素。这种结构上的包含继承区别可以使块级元素创建比行内元素更”大型“的结构。<br>格式上看：默认情况下，行内元素不会以新行开始，而块级元素会新起一行。</p>
-<h2 id="自闭标签"><a href="#自闭标签" class="headerlink" title="自闭标签"></a><a href="http://www.pratikbutani.com/2016/01/list-of-html-self-closing-tags/">自闭标签</a></h2><p>常见的自闭标签有：’’’<br />、<hr />、<img />、<input />、<link />、<meta />‘’’</p>
-<h2 id="相对引用和绝对引用"><a href="#相对引用和绝对引用" class="headerlink" title="相对引用和绝对引用"></a><a href="http://write.awthink.net/%E8%87%B4%E7%9F%A5%E5%BD%95/relative-path.html">相对引用和绝对引用</a></h2><p>会判断相对引用的位置及写法。</p>
-<h1 id="其他补充"><a href="#其他补充" class="headerlink" title="其他补充"></a>其他补充</h1><h2 id="Atom编辑器快捷键"><a href="#Atom编辑器快捷键" class="headerlink" title="Atom编辑器快捷键"></a>Atom编辑器快捷键</h2><pre><code>ctrl + D   同时修改多个词 
-ctrl + \   开启/关闭目录树
-ctrl + alt + C   调用颜色插件
-ctrl + /   注释
-</code></pre><h2 id="补充学习资料"><a href="#补充学习资料" class="headerlink" title="补充学习资料"></a><a href="http://www.w3school.com.cn">补充学习资料</a></h2><h2 id="作业知识点补充"><a href="#作业知识点补充" class="headerlink" title="作业知识点补充"></a>作业知识点补充</h2><p><a href="http://www.adminwang.com/html/34.html"><a>标签的用法</a></p>
-<p><a href="http://www.w3school.com.cn/" target="_blank">Visit W3School!</a><br>href参数表示连接转向的地址，可分为内部书签链接和外部网址连接。</p>
-<p>内部书签链接：锚<br>首先，我们在 HTML 文档中对锚进行命名（创建一个书签）：<br><a name="tips">基本的注意事项 - 有用的提示</a><br>然后，我们在同一个文档中创建指向该锚的链接：<br><a href="#tips">有用的提示</a><br>您也可以在其他页面中创建指向该锚的链接：<br><a href="http://www.w3school.com.cn/html/html_links.asp#tips">有用的提示</a></p>
-<p>target参数表示链接打开的方式。</p>
-<pre><code>_parent ：在上一级窗口中打开。
-_blank：在新窗口中打开。
-_self：在同一窗口中打开。（默认）
-_top ：在浏览器的整个窗口中打开，忽略任何框架。
-</code></pre><h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ul>
-<li>该笔记源自网易微专业《Python web开发》1.1节</li>
-<li>同学整理<a href="http://naotu.baidu.com/file/b184fa7c015eb669df13901068bd0598?token=1fd2a1b13fd05a9b">Python web开发 1.1节 课程大纲</a> </li>
+    <content type="html"><![CDATA[<p>该笔记源自网易微专业《Python web开发》1.4、1.5、1.6、1.7节<br><a id="more"></a></p>
+<h1 id="CSS常用选择器"><a href="#CSS常用选择器" class="headerlink" title="CSS常用选择器"></a>CSS常用选择器</h1><pre><code> - 通配符选择器 *
+ - id选择器(id #)
+ - 类选择器(class .)
+ - 元素选择器(E)
+ - 后代选择器(E F)
+ - 子元素选择器(E&gt;F)
+ - 相邻兄弟元素选择器(E+F)
+ - 群组选择器(selector1,selector2,...,selectorN)
+ - nth选择器：
+fist-child: 选择某个元素的第一个子元素
+last-child: 选择某个元素的最后一个子元素
+</code></pre><h1 id="选择器权重"><a href="#选择器权重" class="headerlink" title="选择器权重"></a>选择器权重</h1><p>根据样式所在位置：!improtant &gt; 内联样式 &gt; style标签 &gt; link标签。<br>计算方式：</p>
+<blockquote>
+<p>一个行内样式+1000，一个id+100，一个属性选择器/class或者伪类+10，一个元素名，或者伪元素+1。其他规则见拓展阅读。</p>
+</blockquote>
+<h1 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h1><p><img src="http://upload-images.jianshu.io/upload_images/307154-bf1e7c46ec514827.gif?imageMogr2/auto-orient/strip" alt="盒模型"><br>box-sizing:border-box：此时元素的内边距和边框不再会增加它的宽度，更便于理解和计算。</p>
+<h1 id="CSS常用属性："><a href="#CSS常用属性：" class="headerlink" title="CSS常用属性："></a>CSS常用属性：</h1><pre><code>- 背景：
+background-color：#9cbfcc;
+background-repeat: repeat;
+background:url(&apos;images/grass.png&apos;);
+background-size: contain;（完全限制的设定的大小内部）
+- 方位：
+padding: 0 20px 30px 0 (上 右 下 左)
+margin-right: 10px;
+text-align：left;
+display:block;(in-line,inline-block)
+- 字体：
+font-family: 字体
+font-size: 大小
+- 边框：
+border-radius: 圆角半径设置
+border: solid 8px rgb(210, 157, 65);  样式，粗细，颜色
+</code></pre><h1 id="定位技术"><a href="#定位技术" class="headerlink" title="定位技术"></a>定位技术</h1><h2 id="relative-相对定位"><a href="#relative-相对定位" class="headerlink" title="relative(相对定位)"></a>relative(相对定位)</h2><p>设置了相对定位之后，通过修改top,left,bottom,right值，元素会在自身文档流所在位置上被移动，其他的元素则不会调整位置来弥补它偏离后剩下的空隙。</p>
+<h2 id="absolute-绝对定位-："><a href="#absolute-绝对定位-：" class="headerlink" title="absolute(绝对定位)："></a>absolute(绝对定位)：</h2><p>设置了绝对定位之后，元素脱离文档流，其他的元素会调整位置来弥补它偏离后剩下的空隙。元素偏移是相对于是它最近的设置了定位属性（position为relative或者absolute，值不为static）的元素。</p>
+<h2 id="fixed-固定定位-："><a href="#fixed-固定定位-：" class="headerlink" title="fixed(固定定位)："></a>fixed(固定定位)：</h2><p>设置了固定定位之后，元素相对的偏移的参考是可视窗口，即使页面滚动，元素仍然会在固定位置。<br>重心修改：<br>transform: translate(-50%,-50%)，坐标原点从左上角改到了中心位置。</p>
+<h1 id="拓展阅读"><a href="#拓展阅读" class="headerlink" title="拓展阅读"></a>拓展阅读</h1><ul>
+<li><a href="http://flukeout.github.io/" target="_blank" rel="external">选择器小游戏</a></li>
+<li><a href="http://www.w3cplus.com/css/css-specificity-things-you-should-know.html" target="_blank" rel="external">你应该知道的一些事情——CSS权重</a></li>
+<li><a href="http://www.w3school.com.cn/css/css_boxmodel.asp" target="_blank" rel="external">盒模型详解</a></li>
+<li><a href="http://ww3.sinaimg.cn/mw690/c5131475jw1eodf2f2oiaj20c636u1kx.jpg" target="_blank" rel="external">常用CSS属性列表</a></li>
+<li><a href="http://www.html-js.com/article/3044" target="_blank" rel="external">absolute与relative</a></li>
+<li><a href="http://zh.learnlayout.com" target="_blank" rel="external">学习CSS布局</a></li>
+<li><a href="https://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block#" target="_blank" rel="external">inline-vs-inline-block</a></li>
 </ul>
-</style></p>]]></content>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>该笔记源自网易微专业《Python web开发》1.4、1.5、1.6、1.7节</p>
+]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;该笔记整理自网易微专业《Python web开发》1.1节 网页开发基础。&lt;br&gt;
+      &lt;p&gt;该笔记源自网易微专业《Python web开发》1.4、1.5、1.6、1.7节&lt;br&gt;
     
     </summary>
     
