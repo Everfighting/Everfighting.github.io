@@ -102,16 +102,18 @@
 
 
 
-<meta name="description" content="Python爱好者| 马拉松菜鸟| Fighting Forever">
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta name="description" content="之前在牛客网上看到一道关于TCP/IP的题目，当时不是很理解子网掩码的机制没有做出来。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="see-effective-ip-by-netmasks">
+<meta property="og:url" content="http://yoursite.com/2017/07/30/see-effective-ip-by-netmasks/index.html">
 <meta property="og:site_name" content="thoughts of everfight">
-<meta property="og:description" content="Python爱好者| 马拉松菜鸟| Fighting Forever">
-<meta property="og:updated_time" content="2017-07-09T06:18:08.413Z">
+<meta property="og:description" content="之前在牛客网上看到一道关于TCP/IP的题目，当时不是很理解子网掩码的机制没有做出来。">
+<meta property="og:image" content="http://7xsxjz.com1.z0.glb.clouddn.com/%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81.jpg">
+<meta property="og:updated_time" content="2017-07-30T08:51:02.492Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
-<meta name="twitter:description" content="Python爱好者| 马拉松菜鸟| Fighting Forever">
+<meta name="twitter:title" content="see-effective-ip-by-netmasks">
+<meta name="twitter:description" content="之前在牛客网上看到一道关于TCP/IP的题目，当时不是很理解子网掩码的机制没有做出来。">
+<meta name="twitter:image" content="http://7xsxjz.com1.z0.glb.clouddn.com/%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81.jpg">
 
 
 
@@ -139,13 +141,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/30/see-effective-ip-by-netmasks/"/>
 
 
 
 
 
-  <title>categories | thoughts of everfight</title>
+  <title>see-effective-ip-by-netmasks | thoughts of everfight</title>
   
 
 
@@ -331,25 +333,222 @@
             
 
   <div id="posts" class="posts-expand">
-  <header class="post-header">
+    
 
-	<h2 class="post-title" itemprop="name headline">categories</h2>
+  
 
+  
+  
+  
 
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/30/see-effective-ip-by-netmasks/">
 
-</header>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="everfight">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="thoughts of everfight">
+    </span>
 
     
-    
-      <div class="category-all-page">
-        <div class="category-all-title">
-            目前共计 5 个分类
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">see-effective-ip-by-netmasks</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-30T16:50:13+08:00">
+                2017-07-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/07/30/see-effective-ip-by-netmasks/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/07/30/see-effective-ip-by-netmasks/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
         </div>
-        <div class="category-all">
-          <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/IT/">IT</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Movie/">Movie</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Read/">Read</a><span class="category-list-count">6</span></li></ul>
-        </div>
-      </div>
+      </header>
     
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>之前在<a href="http://www.nowcoder.com/" target="_blank" rel="external">牛客网</a>上看到一道关于TCP/IP的题目，当时不是很理解子网掩码的机制没有做出来。<br><a id="more"></a><br>前段时间看《图解TCP/IP》刚好里面有讲到这部分的内容，刚好把这道题解决了，知识点分析的感觉通俗易懂，特此分享下。</p>
+<pre><code>下列选项中,属于&quot;10.174.20.176/28&quot;该网段的有效IP地址是:
+A 10.174.20.174
+B 10.174.20.186
+C 10.174.20.191
+D 10.174.20.192
+</code></pre><p>《图解HTTP》：子网掩码可以灵活指定网络标识的长度。<br><img src="http://7xsxjz.com1.z0.glb.clouddn.com/%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81.jpg" alt=""><br>图中：IP地址是有4个8位的二进制数字表示，转化成十进制为172.20.100.52<br>正常的B类地址只有16位子网掩码：255.255.0.0，而图中的子网掩码为26位，扩充了10位，因此主机部分只占据6位。<br>受掩码屏蔽的部分为1，不受掩码屏蔽的部分为0。将IP地址与子网掩码进行与运算，既可以登出网络地址为172.20.100.0，广播地址为主机部分都为1，因此广播地址为172.20.100.63.(不是我们以为的255！)</p>
+<p>同理，将以上知识应用到本题，可得：<br>ip地址是32位每8位为一组的二进制码，由题10.174.20.176/28，指前28位不变，即（10.174.20.不变，还有4位不变，这四位的二进制根据176知位1011）。<br>故，对此网段的有效ip为：10.174.20.1011 0000~10.174.20.1011 1111，排出全0和全1不能用，则ip为：10.174.20.177~10.174.20.190（去掉.176和.191）。<br>答案选B</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="everfight wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎扫一扫，订阅我的公众号。</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div></div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.jpg" alt="everfight WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      everfight
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://yoursite.com/2017/07/30/see-effective-ip-by-netmasks/" title="see-effective-ip-by-netmasks">http://yoursite.com/2017/07/30/see-effective-ip-by-netmasks/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/30/good-b-books-about-internet/" rel="next" title="你不可不读的几本互联网科普书">
+                <i class="fa fa-chevron-left"></i> 你不可不读的几本互联网科普书
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
   </div>
 
 
@@ -706,10 +905,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
@@ -730,9 +929,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/categories/index.html';
-          this.page.identifier = 'categories/index.html';
-          this.page.title = 'categories';
+          this.page.url = 'http://yoursite.com/2017/07/30/see-effective-ip-by-netmasks/';
+          this.page.identifier = '2017/07/30/see-effective-ip-by-netmasks/';
+          this.page.title = 'see-effective-ip-by-netmasks';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://everfight-club.disqus.com/embed.js';
