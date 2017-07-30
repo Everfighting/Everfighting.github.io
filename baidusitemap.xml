@@ -5,14 +5,19 @@
     
   <url>
     <loc>http://yoursite.com/2017/07/30/Zootopia/</loc>
-    <lastmod>2017-07-30T08:17:59.676Z</lastmod>
+    <lastmod>2017-07-30T08:22:26.637Z</lastmod>
     <data>
         <display>
-        <title>Zootopia</title>
+        <title>疯狂动物城好在哪里？</title>
         <pubTime>2017-07-30T08:17:59.000Z</pubTime>
         
+        <tag>Zootopia</tag>
+         
          
            
+             
+              <breadCrumb title="Movie" url="http://yoursite.com/categories/Movie/"/>
+          
         </display>
     </data>
     </url>
