@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/07/30/carrer-choice/</loc>
+    <lastmod>2017-07-30T02:45:48.166Z</lastmod>
+    <data>
+        <display>
+        <title>《浪潮之巅》和我的职业选择</title>
+        <pubTime>2017-07-30T01:57:23.000Z</pubTime>
+        
+        <tag>book_review</tag>
+         
+         
+           
+             
+              <breadCrumb title="Read" url="http://yoursite.com/categories/Read/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/07/30/family-education/</loc>
     <lastmod>2017-07-30T02:41:20.484Z</lastmod>
     <data>
@@ -70,26 +90,6 @@
         <display>
         <title>如何成为一只IT小小鸟:专注</title>
         <pubTime>2017-07-30T02:04:03.000Z</pubTime>
-        
-        <tag>book_review</tag>
-         
-         
-           
-             
-              <breadCrumb title="Read" url="http://yoursite.com/categories/Read/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/07/30/how-to-become-something-carrer/</loc>
-    <lastmod>2017-07-30T02:04:30.165Z</lastmod>
-    <data>
-        <display>
-        <title>《浪潮之巅》和我的职业选择</title>
-        <pubTime>2017-07-30T01:57:23.000Z</pubTime>
         
         <tag>book_review</tag>
          
