@@ -765,6 +765,187 @@ D 10.174.20.192
   </entry>
   
   <entry>
+    <title>python web开发笔记五：Django开发进阶</title>
+    <link href="http://yoursite.com/2017/07/26/python-web-05/"/>
+    <id>http://yoursite.com/2017/07/26/python-web-05/</id>
+    <published>2017-07-26T13:23:21.000Z</published>
+    <updated>2017-07-26T14:09:22.181Z</updated>
+    
+    <content type="html"><![CDATA[<p>该笔记源自网易微专业《Python web开发》2.2节<br><a id="more"></a></p>
+<h1 id="理解上下文"><a href="#理解上下文" class="headerlink" title="理解上下文"></a>理解上下文</h1><pre><code>render(request,x.html,context)
+request:请求的固定写法。
+x.html:模板，需要填补丁的模板。
+context:上下文,填充模板的补丁。
+</code></pre><h1 id="模板的使用流程"><a href="#模板的使用流程" class="headerlink" title="模板的使用流程"></a>模板的使用流程</h1><ul>
+<li>写模板，创建Template对象，用模板语言进行修改。</li>
+<li>创建Context，context是一组字典，用来传递数据给Template对象。</li>
+<li>调用Template对象的render()方法传递context来填充模板。</li>
+</ul>
+<h1 id="创建并使用模板"><a href="#创建并使用模板" class="headerlink" title="创建并使用模板"></a>创建并使用模板</h1><ul>
+<li>单独创建templates、staitc文件夹，将之前写的前端文件如何放入Django项目。</li>
+<li>网页放入tempaltes，所有的静态文件放入static中。(静态文件是指网站中的 js, css, 图片，视频等)</li>
+<li>修改setting，TEMPLATES，DIRS:[os.path.join(BASE_DIR,’templates’).replace(‘\‘,’/‘)], (注意逗号不能够少)</li>
+<li>html最上方加入load staticfiles,在模板中引入静态文件，修改模板中的固定地址改为动态地址。static ‘css/semantic.css’</li>
+</ul>
+<h1 id="模板语言"><a href="#模板语言" class="headerlink" title="模板语言"></a>模板语言</h1><p>模板语言分为：模板变量，模板标签，模板过滤器。</p>
+<pre><code>{% raw %} 
+	模板变量:     
+		{{ value }},{{ Person.name }}
+	模板标签：
+
+		{% for item in list %}
+			{{ item }}
+		{% endfor %}
+
+		{% for key, value in dict.items %}
+			{{ key }}: {{ value }}
+		{% endfor %}
+
+		{% if today_is_weekend %}
+			<p>Welcome to the weekend!</p>
+		{% else %}
+			<p>Get back to work.</p>
+		{% endif %}
+
+	注：标签可以多重进行嵌套。
+
+	其他：
+
+		{% forloop.first %}是一个布尔值。在第一次执行循环时该变量为True
+		{% forloop.last %}是一个布尔值；在最后一次执行循环时被置为True。
+
+	模板过滤器：
+
+		{{ value|default:"nothing" }} 如果为空则显示nothing的样式。
+		{{ value|truncatewords:200 }} 只显示前200个字符。
+		{{ name|lower }} 功能是转换文本为小写。
+
+	{% endraw %}    
+</code></pre><h2 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h2><p>使用 django 的’日期字段’给每篇文章添加类似图中的一个发布日期，格式是「2016-11-05」</p>
+<pre><code>model增加:
+class Aritcle(models.Model):
+    date = models.DateField(auto_now=True)
+
+html增加:
+
+{% raw %}
+	<span class="grey">	{{ article.date|date:"Y-m-d" }}</span>
+	{% endraw %}
+</code></pre><h1 id="模板继承"><a href="#模板继承" class="headerlink" title="模板继承"></a>模板继承</h1><h2 id="extends标签"><a href="#extends标签" class="headerlink" title="extends标签"></a>extends标签</h2><p>定义一个父模板为base.html,写出HTML的骨架，将需要子块修改的地方用    {% block %}{% endblock %}	标出。<br>子模板使用    {% extends "base.html" %}将内容填写进这些空白的内容块。<br>模板继承允许你建立一个基本的”骨架”模板, 它包含你所有最常用的站点元素并定义了一些可以被子模板覆盖的block。<br>如果你需要在子模板中引用父模板中的 block 的内容,使用{{ block.super }}	 变量.这在你希望在父模板的内容之后添加一些内容时会很有用.(你不必完全覆盖父模板的内容.)</p>
+<h2 id="include标签"><a href="#include标签" class="headerlink" title="include标签"></a>include标签</h2><pre><code>{% raw %}{% include %}{% endraw %}该标签允许在(模板中)包含其它的模板的内容。
+</code></pre><p>标签的参数是所要包含的模板名称，可以是一个变量，也可以是用单/双引号硬编码的字符串。<br>每当在多个模板中出现相同的代码时，就应该考虑是否要使用     {% include %}来减少重复。</p>
+<ul>
+<li>stackoverflow问题：    {% include %} vs {% extends %} in django templates?<blockquote>
+<p>Extending allows you to replace blocks (e.g. “content”) from a parent template instead of including parts to build the page (e.g. “header” and “footer”). This allows you to have a single template containing your complete layout and you only “insert” the content of the other template by replacing a block.<br>If the user profile is used on all pages, you’d probably want to put it in your base template which is extended by others or include it into the base template. If you wanted the user profile only on very few pages, you could also include it in those templates. If the user profile is the same except on a few pages, put it in your base template inside a block which can then be replaced in those templates which want a different profile.</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="模板注释"><a href="#模板注释" class="headerlink" title="模板注释"></a>模板注释</h2>
+注释使用{# #}注释不能跨多行 eg: {# This is a comment #}
+
+<h1 id="urls相关"><a href="#urls相关" class="headerlink" title="urls相关"></a>urls相关</h1><h2 id="urls中定义链接-三种"><a href="#urls中定义链接-三种" class="headerlink" title="urls中定义链接(三种)"></a>urls中定义链接(三种)</h2><pre><code>Function views
+Add an import:  from my_app import views
+Add a URL to urlpatterns:  url(r&apos;^$&apos;, views.home, name=&apos;home&apos;)
+
+Class-based views
+Add an import:  from other_app.views import Home
+Add a URL to urlpatterns:  url(r&apos;^$&apos;, Home.as_view(), name=&apos;home&apos;)
+
+Including another URLconf
+Import the include() function: from django.conf.urls import url, include
+Add a URL to urlpatterns:  url(r&apos;^blog/&apos;, include(&apos;blog.urls&apos;))
+</code></pre><h2 id="url的name属性"><a href="#url的name属性" class="headerlink" title="url的name属性"></a>url的name属性</h2><p>url(r’^add/$’, calc_views.add, name=’add’),<br>这里的name可以用于在 templates, models, views ……中得到对应的网址，相当于“给网址取了个名字”，只要这个名字不变，网址变了也能通过名字获取到。</p>
+<h2 id="url正则表达式"><a href="#url正则表达式" class="headerlink" title="url正则表达式"></a>url正则表达式</h2><pre><code>url(r&apos;^(?P&lt;year&gt;\d{4})/(?P&lt;month&gt;\d{1,2})/$&apos;,&apos;get_news_list&apos;,name=&quot;news_archive&quot; )
+</code></pre><p><year> <month> 在view的参数获得 如：def index(request,year,month)</month></year></p>
+<h2 id="url的include用法"><a href="#url的include用法" class="headerlink" title="url的include用法"></a>url的include用法</h2><pre><code>(r&apos;^weblog/&apos;, include(&apos;mysite.blog.urls&apos;)), 
+(r&apos;^photos/&apos;, include(&apos;mysite.photos.urls&apos;)),
+</code></pre><p>指向include()的正则表达式并不包含一个$(字符串结尾匹配符)。每当Django 遇到include()时，它将截断匹配的URL，并把【剩余】的字符串发往被包含的 URLconf 作进一步处理。 </p>
+<h1 id="创建使用后台"><a href="#创建使用后台" class="headerlink" title="创建使用后台"></a>创建使用后台</h1><p>使用django自带的后台，可以可视化管理后台的数据。</p>
+<h2 id="创建超级管理员"><a href="#创建超级管理员" class="headerlink" title="创建超级管理员"></a>创建超级管理员</h2><pre><code>python manage.py createsuperuser # 设置用户名，密码。
+</code></pre><h2 id="注册自定义model"><a href="#注册自定义model" class="headerlink" title="注册自定义model"></a>注册自定义model</h2><pre><code>from models import People
+admin.site.register(People)
+</code></pre><h2 id="修改显示字段"><a href="#修改显示字段" class="headerlink" title="修改显示字段"></a>修改显示字段</h2><p>管理后台默认显示People Obejct，在model中添加返回值方法，修改显示效果。</p>
+<pre><code>def __str__(self):
+    return self.name 
+</code></pre><h2 id="修改后台密码的方法"><a href="#修改后台密码的方法" class="headerlink" title="修改后台密码的方法"></a>修改后台密码的方法</h2><pre><code>python manage.py createsuperuser --username admin
+python manage.py changepassword admin
+</code></pre><h2 id="admin显示自定义字段"><a href="#admin显示自定义字段" class="headerlink" title="admin显示自定义字段"></a>admin显示自定义字段</h2><pre><code>from django.contrib import admin
+from .models import Article
+
+class ArticleAdmin(admin.ModelAdmin):
+    list_display = (&apos;title&apos;,&apos;pub_date&apos;,&apos;update_time&apos;,)
+
+admin.site.register(Article,ArticleAdmin)
+</code></pre><h1 id="引入数据"><a href="#引入数据" class="headerlink" title="引入数据"></a>引入数据</h1><p>Django ORM对数据库进行操作，数据库操作完成之后，记得要进行save()保存。</p>
+<h2 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h2><pre><code>Article.objects.all() 获取表中所有对象
+Aritcle.objects.get(pk=1) # Django中pk=primary key,和id等价。
+Article.objects.filter(pub_date__year=2006) # 使用过滤器获取特定对象
+Article.objects.all().filter(pub_date__year=2006) #与上方一致
+
+## 链式过滤
+&gt;&gt;&gt; Aritcle.objects.filter(
+...     headline__startswith=&apos;What&apos;
+... ).exclude(
+...     pub_date__gte=datetime.date.today()
+... ).filter(
+...     pub_date__gte=datetime(2005, 1, 30)
+... )
+
+Article.objects.create(author=me, title=&apos;Sample title&apos;, text=&apos;Test&apos;) #创建对象
+Person.objects.get_or_create(name=&quot;WZT&quot;, age=23) # 防止重复很好的方法
+
+Article.objects.all()[:5] 记录前5条 
+Person.objects.all().reverse()[:2] # 最后两条
+Person.objects.all().reverse()[0] # 最后一条
+
+&gt;&gt;&gt; Post.objects.filter(title__contains=&apos;title&apos;) # 包含查询
+[&lt;Post: Sample title&gt;, &lt;Post: 4th title of post&gt;] 
+# 注在title与contains之间有两个下划线字符 (_)。
+# Django的ORM使用此语法来分隔字段名称 （&quot;title&quot;） 和操作或筛选器(&quot;contains&quot;)。
+
+Post.objects.order_by(&apos;-created_date&apos;) # 对象进行排序，默认升序，添负号为降序。
+Person.objects.filter(name__iexact=&quot;abc&quot;) # 不区分大小写
+Person.objects.filter(name__exact=&quot;abc&quot;) # 严格等于
+
+Person.objects.filter(name__regex=&quot;^abc&quot;)  # 正则表达式
+Person.objects.filter(name__iregex=&quot;^abc&quot;) # 不区分大小写
+
+Person.objects.exclude(name__contains=&quot;WZ&quot;)  # 排除
+Person.objects.filter(name__contains=&quot;abc&quot;).exclude(age=23
+ #找出名称含有abc, 但是排除年龄是23岁的
+</code></pre><h2 id="QuerySet创建对象的四种方法"><a href="#QuerySet创建对象的四种方法" class="headerlink" title="QuerySet创建对象的四种方法"></a>QuerySet创建对象的四种方法</h2><pre><code>Author.objects.create(name=&quot;WeizhongTu&quot;, email=&quot;tuweizhong@163.com
+
+twz = Author(name=&quot;WeizhongTu&quot;, email=&quot;tuweizhong@163.com&quot;)
+twz.save()
+
+twz = Author()
+twz.name=&quot;WeizhongTu&quot;
+twz.email=&quot;tuweizhong@163.com&quot;
+
+Author.objects.get_or_create(name=&quot;WeizhongTu&quot;, email=&quot;tuweizhon“)
+# 返回值(object, True/False)
+</code></pre><h2 id="QuerySet是可迭代的"><a href="#QuerySet是可迭代的" class="headerlink" title="QuerySet是可迭代的"></a>QuerySet是可迭代的</h2><pre><code>es = Entry.objects.all()
+for e in es:
+    print(e.headline)
+</code></pre><h2 id="检查对象是否存在"><a href="#检查对象是否存在" class="headerlink" title="检查对象是否存在"></a>检查对象是否存在</h2><pre><code>Entry.objects.all().exists() 返回布尔值
+</code></pre><p>拓展阅读：<br><a href="http://o90wo9y16.bkt.clouddn.com/Django%20%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E7%AC%AC%E4%BA%8C%E8%AF%BE.pdf" target="_blank" rel="external">课堂操作内容文档</a></p>
+<p>备注<br>该笔记源自网易微专业《Python web开发》2.2节</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;该笔记源自网易微专业《Python web开发》2.2节&lt;br&gt;
+    
+    </summary>
+    
+      <category term="IT" scheme="http://yoursite.com/categories/IT/"/>
+    
+    
+      <category term="notes" scheme="http://yoursite.com/tags/notes/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python web开发笔记二：Semantic UI框架</title>
     <link href="http://yoursite.com/2017/07/26/python-web-02/"/>
     <id>http://yoursite.com/2017/07/26/python-web-02/</id>
@@ -926,161 +1107,54 @@ _top ：在浏览器的整个窗口中打开，忽略任何框架。
   </entry>
   
   <entry>
-    <title>python web开发笔记四：Django开发基础</title>
-    <link href="http://yoursite.com/2017/07/26/python-web-04/"/>
-    <id>http://yoursite.com/2017/07/26/python-web-04/</id>
+    <title>如何在列表、字典、集合中根据条件筛选数据</title>
+    <link href="http://yoursite.com/2017/07/26/filter-list-dict-set/"/>
+    <id>http://yoursite.com/2017/07/26/filter-list-dict-set/</id>
     <published>2017-07-26T13:23:21.000Z</published>
-    <updated>2017-07-28T07:05:32.371Z</updated>
+    <updated>2017-07-28T15:33:58.212Z</updated>
     
-    <content type="html"><![CDATA[<p>该笔记整理自网易微专业《Python web开发》2.1、2.2节。<br><a id="more"></a></p>
-<h1 id="Why-Django"><a href="#Why-Django" class="headerlink" title="Why Django"></a>Why Django</h1><p>在一定的时间内，有限的技术情况下，建设一个高质量的网站，Django几乎成了唯一的方案。<br>Django把所有可能性都考虑到了，从这种程度上看复杂就意味着全面，毕竟时间更重要！</p>
-<h1 id="Django特点"><a href="#Django特点" class="headerlink" title="Django特点"></a>Django特点</h1><ul>
-<li>强大的数据库功能</li>
-<li>自带的强大的后台功能</li>
-<li>优雅的网址</li>
-<li>模板系统</li>
-<li>缓存系统</li>
-<li>国际化</li>
-</ul>
-<h1 id="Django应用案例"><a href="#Django应用案例" class="headerlink" title="Django应用案例"></a>Django应用案例</h1><p>国外：Disqus、Pinterest、Instagram、NASA Science等<br>国内：豆瓣、知乎、饿了么等</p>
-<p>#Django开发准备<br>1、安装pip<br>2、安装Django<br>3、安装pyflakes<br>4、Atom安装插件：atom-django、autocomplete-python、platformio-ide-terminal(也可以用pycharm)</p>
-<h1 id="MTV模型"><a href="#MTV模型" class="headerlink" title="MTV模型"></a>MTV模型</h1><h2 id="网页访问流程："><a href="#网页访问流程：" class="headerlink" title="网页访问流程："></a>网页访问流程：</h2><pre><code>request ----&gt;Django Web------&gt;response
-</code></pre><h2 id="流程内部结构："><a href="#流程内部结构：" class="headerlink" title="流程内部结构："></a>流程内部结构：</h2><pre><code>request——————&gt;urls——————&gt;views&lt;——————models
-                              |
-                              |
-                              ↓
-                          templates
-</code></pre><h2 id="MTV"><a href="#MTV" class="headerlink" title="MTV"></a>MTV</h2><p>models—–数据: 作为数据库的代理人，通过 model 操作数据库。<br>Templates—–模板: 把数据填充进网页中进行渲染。<br>Views—–视图:把渲染好的网页返回给使用者，让我们可以在浏览器中看到网页。<br>Urls—–链接：找到每个 url 对应的 view。</p>
-<h2 id="为什么要MTV分开？"><a href="#为什么要MTV分开？" class="headerlink" title="为什么要MTV分开？"></a>为什么要MTV分开？</h2><p>复杂的功能，分开可以单独的职责进行处理，快速找到错误，方便处理和维护。</p>
-<h1 id="最简单的Django网站："><a href="#最简单的Django网站：" class="headerlink" title="最简单的Django网站："></a>最简单的Django网站：</h1><p>网站创建的流程：P —&gt; A —&gt; D —&gt; M —&gt; V —&gt; T —&gt; U<br>P: 创建project     django-admin startproject firstsite<br>A: 创建APP         python manage.py startapp firstapp<br>D: 创建数据库      python manage.py migrate<br>M: 创建数据库的表  models创建相关模型类class<br>V:  创建视图        views创建相关视图def<br>T: 创建模板        templates/static 用模板语言进行修改<br>U: 创建对应的url正则关系 设置访问url</p>
-<h1 id="具体步骤分析"><a href="#具体步骤分析" class="headerlink" title="具体步骤分析"></a>具体步骤分析</h1><h2 id="创建站点："><a href="#创建站点：" class="headerlink" title="创建站点："></a>创建站点：</h2><pre><code>django-admin startproject firstsite
-</code></pre><p>生成以下文件：</p>
-<pre><code>firstsite
-├── manage.py
-└── firstsite
-    ├── __init__.py
-    ├── settings.py
-    ├── urls.py
-    └── wsgi.py
-</code></pre><p>文件解释：<br>manage.py：django中命令的运行文件，一般格式为：python manage.py 命令名称。<br><strong>init</strong>.py:是python包的目录结构必须的。<br>setting.py:Django配置全局变量和属性的文件，比如 DEBUG 的开关，静态文件的位置等。<br>urls.py:网址入口，关联到对应的views.py中的一个函数（或者generic类），访问网址就对应一个函数。<br>wsgi.py:部署服务器时用到的wsgi.py文件。</p>
-<p>settings内部结构：</p>
-<ul>
-<li>DEBUG = True时，页面发生错误会直接抛给前台，便于程序员进行修改。在真实环境中需要关闭，DEBUG=False。</li>
-<li>当 DEBUG=False 时，ALLOW_HOSTS这个为必填项，如果不想输入，可以用 ALLOW_HOSTS = [‘*’] 来允许所有的访问。</li>
-<li>INSTALLED_APPS，用户新建了APP需要在该栏目下进行注册。</li>
-<li>TEMPLATES：若新建了templates文件夹，需要修改DIRS地址：<pre><code>&apos;DIRS&apos;: [os.path.join(BASE_DIR, &apos;templates&apos;).replace(&apos;\\&apos;, &apos;/&apos;)],
-</code></pre></li>
-<li><p>DATABASES默认的是:sqlite3, 修改为mysql如下：</p>
-<pre><code>DATABASES = {
-    &apos;default&apos;: {
-        &apos;ENGINE&apos;: &apos;django.db.backends.mysql&apos;,
-        &apos;NAME&apos;: &apos;testdb&apos;,
-        &apos;USER&apos;:&apos;younger&apos;,
-        &apos;PASSWORD&apos;:&apos;123&apos;,
-        &apos;HOST&apos;:&apos;&apos;,
-        &apos;PORT&apos;:&apos;&apos;,
-    }
-}
-</code></pre></li>
-<li><p>LANGUAGE_CODE = ‘en-us’, 中文修改为’zh-Hans’。</p>
-</li>
-</ul>
-<h2 id="创建APP"><a href="#创建APP" class="headerlink" title="创建APP"></a>创建APP</h2><p>python manage.py startapp firstapp<br>(项目站点的模块，一个project下面可以有多个app)</p>
-<pre><code>生成以下文件：
-migrations: 生成数据库的py脚本文件夹。
-__init__: 是python包的目录结构必须的。
-admin.py：后台，可以用很少量的代码就拥有一个强大的后台。
-models.py: 与数据库操作相关，存入或读取数据时用到这个，当然用不到数据库的时候 你可以不使用。
-views.py: 处理用户发出的请求，从urls.py中对应过来, 通过渲染templates中的网页可以将显示内容，比如登陆后的用户名，用户请求的数据，输出到网页。
-tests.py: 网站的测试代码。
-</code></pre><h2 id="添加app到INSTALL-APPS"><a href="#添加app到INSTALL-APPS" class="headerlink" title="添加app到INSTALL_APPS"></a>添加app到INSTALL_APPS</h2><p>新建的app如果不加到INSTALL_APPS 中的话, django 就不能自动找到app中的模板文件(app-name/templates/下的文件)和静态文件(app-name/static/中的文件) 。</p>
-<h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><pre><code>python mange.py makemigrations
-</code></pre><p>makemigrations命令生成的文件会存到migrations/目录下，生成复杂的创建数据库的语句。</p>
-<pre><code>python mange.py migrate
-</code></pre><p>之前的makemigrations操作只是生成migration文件，还没有对数据库进行操作，接下来执行migrate命令，完成数据的合并和修改。</p>
-<pre><code>makemigrations vs migrate
-makemigrations的意思是将model编译成mysql可以理解的sql语句，存放在那个migrations文件夹里面。
-migrate是将这个最新生成的py文件执行，让数据库能够按照sql语句进行表的修改。由于sql语句中有很多的标点符号是和python冲突的，经常需要转义数据库才能执行。因此直接使用model模块可以省去你很多书写sql语句的烦恼。
-</code></pre><h2 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h2><pre><code>python mange.py runserver 临时测试的服务器
-</code></pre><h1 id="案例分析"><a href="#案例分析" class="headerlink" title="案例分析"></a>案例分析</h1><h2 id="views中定义视图"><a href="#views中定义视图" class="headerlink" title="views中定义视图"></a>views中定义视图</h2><pre><code>t = Template(html_string)      # 用来把 html 字符变成模板，类似于打孔。
-c = Context({&apos;person&apos;:person}) # 创建一个上下文 context,django 规定 context 必须是字典的形式，类似于造补丁。
-web_page = t.render(c)           # 对模板进行渲染，把上下文渲染到模板里面，类似于打补丁。
-return HTTPResponse(web_page)  # web_page表示的网页字符串转化具体可见的网页response。
-</code></pre><p>拓展阅读：<br>1、<a href="http://everfighting.club/2016/10/09/http-illustration-01/" target="_blank" rel="external">《图解HTTP》笔记</a><br>2、<a href="http://www.ziqiangxuetang.com/django/django-tutorial.html" target="_blank" rel="external">Django 基础教程(自强学堂)</a></p>
-<p>备注<br>该笔记源自网易微专业《Python web开发》2.1、2.2节</p>
-]]></content>
+    <content type="html"><![CDATA[<p>此笔记整理自慕课网课程《Python进阶实战教程》:如何在列表、字典、集合中根据条件筛选数据<br><a id="more"></a></p>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> random <span class="keyword">import</span> randint</div><div class="line">data = [randint(<span class="number">-10</span>,<span class="number">10</span>) <span class="keyword">for</span> _ <span class="keyword">in</span>  range(<span class="number">10</span>)]</div><div class="line">data</div></pre></td></tr></table></figure>
+<pre><code>[3, 0, 1, 9, -4, -4, -3, 1, -7, 0]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[i <span class="keyword">for</span> i <span class="keyword">in</span>  filter(<span class="keyword">lambda</span> x:x&gt;=<span class="number">0</span>,data)]</div></pre></td></tr></table></figure>
+<pre><code>[3, 0, 1, 9, 1, 0]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[x <span class="keyword">for</span> x <span class="keyword">in</span> data <span class="keyword">if</span> x&gt;= <span class="number">0</span>]</div></pre></td></tr></table></figure>
+<pre><code>[3, 0, 1, 9, 1, 0]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">timeit [i <span class="keyword">for</span> i <span class="keyword">in</span>  filter(<span class="keyword">lambda</span> x:x&gt;=<span class="number">0</span>,data)]</div></pre></td></tr></table></figure>
+<pre><code>100000 loops, best of 3: 2.42 µs per loop
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">timeit [x <span class="keyword">for</span> x <span class="keyword">in</span> data <span class="keyword">if</span> x&gt;= <span class="number">0</span>]</div></pre></td></tr></table></figure>
+<pre><code>1000000 loops, best of 3: 950 ns per loop
+</code></pre><h1 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">d = &#123;x:randint(<span class="number">60</span>,<span class="number">100</span>) <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">20</span>)&#125;</div><div class="line">d</div></pre></td></tr></table></figure>
+<pre><code>{1: 98,
+ 2: 77,
+ 3: 76,
+ 4: 94,
+ 5: 94,
+ 6: 86,
+ 7: 61,
+ 8: 72,
+ 9: 96,
+ 10: 64,
+ 11: 60,
+ 12: 76,
+ 13: 69,
+ 14: 81,
+ 15: 66,
+ 16: 70,
+ 17: 78,
+ 18: 80,
+ 19: 75}
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;k:v <span class="keyword">for</span> k,v <span class="keyword">in</span> d.items() <span class="keyword">if</span> v &gt;<span class="number">90</span> &#125;</div></pre></td></tr></table></figure>
+<pre><code>{1: 98, 4: 94, 5: 94, 9: 96}
+</code></pre><h1 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">s = set(data)</div><div class="line">s</div></pre></td></tr></table></figure>
+<pre><code>{-7, -4, -3, 0, 1, 3, 9}
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;x <span class="keyword">for</span> x <span class="keyword">in</span> s <span class="keyword">if</span> x % <span class="number">3</span> == <span class="number">0</span>&#125;</div></pre></td></tr></table></figure>
+<pre><code>{-3, 0, 3, 9}
+</code></pre>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;该笔记整理自网易微专业《Python web开发》2.1、2.2节。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="IT" scheme="http://yoursite.com/categories/IT/"/>
-    
-    
-      <category term="notes" scheme="http://yoursite.com/tags/notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python web开发笔记三：CSS基础</title>
-    <link href="http://yoursite.com/2017/07/26/python-web-03/"/>
-    <id>http://yoursite.com/2017/07/26/python-web-03/</id>
-    <published>2017-07-26T13:23:21.000Z</published>
-    <updated>2017-07-28T07:05:29.561Z</updated>
-    
-    <content type="html"><![CDATA[<p>该笔记源自网易微专业《Python web开发》1.4、1.5、1.6、1.7节<br><a id="more"></a></p>
-<h1 id="CSS常用选择器"><a href="#CSS常用选择器" class="headerlink" title="CSS常用选择器"></a>CSS常用选择器</h1><pre><code> - 通配符选择器 *
- - id选择器(id #)
- - 类选择器(class .)
- - 元素选择器(E)
- - 后代选择器(E F)
- - 子元素选择器(E&gt;F)
- - 相邻兄弟元素选择器(E+F)
- - 群组选择器(selector1,selector2,...,selectorN)
- - nth选择器：
-fist-child: 选择某个元素的第一个子元素
-last-child: 选择某个元素的最后一个子元素
-</code></pre><h1 id="选择器权重"><a href="#选择器权重" class="headerlink" title="选择器权重"></a>选择器权重</h1><p>根据样式所在位置：!improtant &gt; 内联样式 &gt; style标签 &gt; link标签。<br>计算方式：</p>
-<blockquote>
-<p>一个行内样式+1000，一个id+100，一个属性选择器/class或者伪类+10，一个元素名，或者伪元素+1。其他规则见拓展阅读。</p>
-</blockquote>
-<h1 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h1><p><img src="http://upload-images.jianshu.io/upload_images/307154-bf1e7c46ec514827.gif?imageMogr2/auto-orient/strip" alt="盒模型"><br>box-sizing:border-box：此时元素的内边距和边框不再会增加它的宽度，更便于理解和计算。</p>
-<h1 id="CSS常用属性："><a href="#CSS常用属性：" class="headerlink" title="CSS常用属性："></a>CSS常用属性：</h1><pre><code>- 背景：
-background-color：#9cbfcc;
-background-repeat: repeat;
-background:url(&apos;images/grass.png&apos;);
-background-size: contain;（完全限制的设定的大小内部）
-- 方位：
-padding: 0 20px 30px 0 (上 右 下 左)
-margin-right: 10px;
-text-align：left;
-display:block;(in-line,inline-block)
-- 字体：
-font-family: 字体
-font-size: 大小
-- 边框：
-border-radius: 圆角半径设置
-border: solid 8px rgb(210, 157, 65);  样式，粗细，颜色
-</code></pre><h1 id="定位技术"><a href="#定位技术" class="headerlink" title="定位技术"></a>定位技术</h1><h2 id="relative-相对定位"><a href="#relative-相对定位" class="headerlink" title="relative(相对定位)"></a>relative(相对定位)</h2><p>设置了相对定位之后，通过修改top,left,bottom,right值，元素会在自身文档流所在位置上被移动，其他的元素则不会调整位置来弥补它偏离后剩下的空隙。</p>
-<h2 id="absolute-绝对定位-："><a href="#absolute-绝对定位-：" class="headerlink" title="absolute(绝对定位)："></a>absolute(绝对定位)：</h2><p>设置了绝对定位之后，元素脱离文档流，其他的元素会调整位置来弥补它偏离后剩下的空隙。元素偏移是相对于是它最近的设置了定位属性（position为relative或者absolute，值不为static）的元素。</p>
-<h2 id="fixed-固定定位-："><a href="#fixed-固定定位-：" class="headerlink" title="fixed(固定定位)："></a>fixed(固定定位)：</h2><p>设置了固定定位之后，元素相对的偏移的参考是可视窗口，即使页面滚动，元素仍然会在固定位置。<br>重心修改：<br>transform: translate(-50%,-50%)，坐标原点从左上角改到了中心位置。</p>
-<h1 id="拓展阅读"><a href="#拓展阅读" class="headerlink" title="拓展阅读"></a>拓展阅读</h1><ul>
-<li><a href="http://flukeout.github.io/" target="_blank" rel="external">选择器小游戏</a></li>
-<li><a href="http://www.w3cplus.com/css/css-specificity-things-you-should-know.html" target="_blank" rel="external">你应该知道的一些事情——CSS权重</a></li>
-<li><a href="http://www.w3school.com.cn/css/css_boxmodel.asp" target="_blank" rel="external">盒模型详解</a></li>
-<li><a href="http://ww3.sinaimg.cn/mw690/c5131475jw1eodf2f2oiaj20c636u1kx.jpg" target="_blank" rel="external">常用CSS属性列表</a></li>
-<li><a href="http://www.html-js.com/article/3044" target="_blank" rel="external">absolute与relative</a></li>
-<li><a href="http://zh.learnlayout.com" target="_blank" rel="external">学习CSS布局</a></li>
-<li><a href="https://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block#" target="_blank" rel="external">inline-vs-inline-block</a></li>
-</ul>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>该笔记源自网易微专业《Python web开发》1.4、1.5、1.6、1.7节</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;该笔记源自网易微专业《Python web开发》1.4、1.5、1.6、1.7节&lt;br&gt;
+      &lt;p&gt;此笔记整理自慕课网课程《Python进阶实战教程》:如何在列表、字典、集合中根据条件筛选数据&lt;br&gt;
     
     </summary>
     
