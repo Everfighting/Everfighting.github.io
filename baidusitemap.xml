@@ -4,6 +4,66 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/08/22/a-byte-of-python/</loc>
+    <lastmod>2017-08-22T06:05:43.108Z</lastmod>
+    <data>
+        <display>
+        <title>笔记|《简明Python教程》:编程小白的第一本python入门书</title>
+        <pubTime>2017-08-22T03:57:54.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="http://yoursite.com/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/08/09/rent-house/</loc>
+    <lastmod>2017-08-09T10:20:22.771Z</lastmod>
+    <data>
+        <display>
+        <title>rent-house</title>
+        <pubTime>2017-08-09T10:19:15.000Z</pubTime>
+        
+        <tag>上海,租房</tag>
+         
+         
+           
+             
+              <breadCrumb title="Life" url="http://yoursite.com/categories/Life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/10/05/compare-diff-between-list/</loc>
+    <lastmod>2017-08-09T10:17:23.964Z</lastmod>
+    <data>
+        <display>
+        <title>Python标准类型的比较原则:字典VS列表(元组)</title>
+        <pubTime>2016-10-05T10:15:35.000Z</pubTime>
+        
+        <tag>list,dict,语法</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="http://yoursite.com/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/08/09/network-violence/</loc>
     <lastmod>2017-08-09T10:14:03.487Z</lastmod>
     <data>
